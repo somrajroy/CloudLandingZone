@@ -27,7 +27,7 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 
 # Appendix
 Below are some additional resources and references for further learning: <br/>
-1. [What is TFLint and How to Lint Your Terraform Code](https://spacelift.io/blog/what-is-tflint)<br/>
+1. [What is a Cloud Landing Zone?]([https://spacelift.io/blog/what-is-tflint](https://www.appvia.io/blog/what-is-a-cloud-landing-zone))<br/>
 2. [TFLint, covering installation, configuration, usage](https://www.devopsschool.com/blog/terraform-tutorials-tflint-covering-installation-configuration-usage/)<br/>
 3. [Enhancing Terraform Deployments with TFLint in GitHub Actions](https://dev.to/techielass/integrating-tflint-into-your-workflow-iea)<br/>
 4. [TFLint rules : terraform_unused_declarations](https://github.com/terraform-linters/tflint-ruleset-terraform/blob/main/docs/rules/terraform_unused_declarations.md)<br/>
