@@ -46,6 +46,9 @@ Below table summarizes the elements in each CSP's : <br/>
 
 # Landing Zone Checklist (Cloud-Agnostic)
 
+This checklist helps ensure all the essential aspects during landing zone setup are covered : <br/>
+
+
 | **Category**            | **Key Activities**                                                                                                                                     |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Identity & Access**   | - Configure IAM roles, policies, and groups  <br> - Set up SSO and MFA  <br> - Apply least-privilege access  <br> - Integrate with identity provider |
