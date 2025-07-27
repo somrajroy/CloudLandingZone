@@ -24,6 +24,11 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
+ The diagram below summarizes the core components of a cloud-agnostic Landing Zone across all major cloud providers. It visually represents the foundational elements — such as identity, networking, security, and automation — that are essential for building a secure and scalable environment in AWS, Azure, or GCP. <br/>
+
+ <img width="790" height="578" alt="image" src="https://github.com/user-attachments/assets/ac56397d-2be4-4540-abc9-6bdfca46ba38" />
+
+
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
 Below table summarizes the elements in each CSP's : <br/>
 
