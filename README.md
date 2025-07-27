@@ -108,3 +108,4 @@ Below are some additional resources and references for further learning: <br/>
 2. [Checklist : Building Azure Right: A Practical Checklist for Infrastructure Landing Zones](https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-azure-right-a-practical-checklist-for-infrastructure-landing-zones/4409975)<br/>
 3. [What are Day-0, Day-1, and Day-2 Operations?](https://spacelift.io/blog/day-0-day-1-day-2-operations)<br/>
 4. [Cloud Landing Zone Lifecycle explained](https://www.meshcloud.io/en/blog/cloud-landing-zone-lifecycle-explained/)<br/>
+5. [What is a Cloud Landing Zone?](https://www.appvia.io/blog/what-is-a-cloud-landing-zone)<br/>
