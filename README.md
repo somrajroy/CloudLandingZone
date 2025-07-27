@@ -44,10 +44,9 @@ Below table summarizes the elements in each CSP's : <br/>
 | **Automation & IaC**      | CloudFormation, Terraform, CDK, Control Tower                         | Bicep, ARM Templates, Terraform, Landing Zone Accelerator            | Terraform, Deployment Manager (legacy), GitOps (Config Connector)     |
 | **Cost Management**       | AWS Budgets, Cost Explorer, Cost Categories                           | Cost Management + Billing, Budgets, Advisor                          | Cloud Billing Reports, Budgets, Recommender, FinOps tools             | <br/>
 
-# Cloud-Agnostic Landing Zone Checklist
+# Cloud-Agnostic Landing Zone Checklist by Day 0 / Day 1 / Day 2
 You may leverage the below practical checklist to ensure your landing zone covers all the foundational elements — from identity to automation — regardless of the cloud provider.<br/>
-### Cloud Landing Zone Checklist by Day 0 / Day 1 / Day 2
-#### Day 0 – Planning & Design
+### Day 0 – Planning & Design
 
 | **Category**              | **Key Activities**                                                                                                                                              |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -58,7 +57,7 @@ You may leverage the below practical checklist to ensure your landing zone cover
 | **Automation & IaC**      | - Set up Terraform/Bicep/CloudFormation baseline modules  <br> - Define Git repo structure  <br> - Plan CI/CD pipelines  <br> - Plan Policy-as-Code             |
 | **Cost Management**       | - Define budget controls  <br> - Plan tagging for cost allocation  <br> - Enable billing export or APIs                                                         |
 
-#### Day 1 – Implementation & Deployment
+### Day 1 – Implementation & Deployment
 
 | **Category**              | **Key Activities**                                                                                                                           |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -69,7 +68,7 @@ You may leverage the below practical checklist to ensure your landing zone cover
 | **Monitoring & Logging**  | - Enable centralized logging and audit trails  <br> - Set up log sinks and storage  <br> - Start basic metrics/alerting setup                |
 | **Automation & IaC**      | - Deploy environments using IaC  <br> - Integrate IaC into CI/CD  <br> - Validate using Policy-as-Code                                       |
 | **Cost Management**       | - Apply budgets and alerts  <br> - Enable detailed billing reports  <br> - Tag deployed resources                                            |
-#### Day 2 – Operations & Optimization
+### Day 2 – Operations & Optimization
 
 | **Category**              | **Key Activities**                                                                                                           |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
