@@ -46,7 +46,7 @@ Below table summarizes the elements in each CSP's : <br/>
 # Appendix
 Below are some additional resources and references for further learning: <br/>
 1. [What is a Cloud Landing Zone?](https://www.appvia.io/blog/what-is-a-cloud-landing-zone)<br/>
-2. [https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-azure-right-a-practical-checklist-for-infrastructure-landing-zones/4409975](https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-azure-right-a-practical-checklist-for-infrastructure-landing-zones/4409975)<br/>
+2. [Checklist : Building Azure Right: A Practical Checklist for Infrastructure Landing Zones](https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-azure-right-a-practical-checklist-for-infrastructure-landing-zones/4409975)<br/>
 3. [Enhancing Terraform Deployments with TFLint in GitHub Actions](https://dev.to/techielass/integrating-tflint-into-your-workflow-iea)<br/>
 4. [TFLint rules : terraform_unused_declarations](https://github.com/terraform-linters/tflint-ruleset-terraform/blob/main/docs/rules/terraform_unused_declarations.md)<br/>
 5. [TFLint AWS Complete ruleset](https://github.com/terraform-linters/tflint-ruleset-aws/blob/master/docs/rules/README.md)<br/>
