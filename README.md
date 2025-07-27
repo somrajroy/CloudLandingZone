@@ -1,7 +1,7 @@
 # CloudLandingZone
 A `Cloud Landing Zone` is a pre-configured Cloud Environment within a cloud provider (like AWS, Azure, or GCP)  that that acts as a foundation for deploying applications and workloads.  It establishes `guardrails, governance, automation and infrastructure` allowing teams to deploy workloads securely & efficiently from Day-1. Think of it like setting up a robust base camp before starting to build houses in a new territory. It's not just a single server or a VPC; it’s a collection of pre-configured services, policies, controls, and automated provisioning that ensures everything built on top is secure, compliant, cost-effective, and scalable. <br/>
 
-🔍 Another analogy : A New Office Building before Move-In. You wouldn’t just throw up a sign and open the doors. You would set-up : <br/>
+🔍 Another analogy : it’s like setting up a new office building before the teams move in. You wouldn’t just put up a sign and open the doors — you’d set up : <br/>
 - 🛡️ Security (Access Control): Locks, access cards, cameras.
 - 🌐 Utilities (Networking): Electricity, plumbing, internet.
 - 🗂️ Departments (Resource Hierarchy): Dedicated spaces for teams.
