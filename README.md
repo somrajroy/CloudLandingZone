@@ -42,8 +42,8 @@ Below table summarizes the elements in each CSP's : <br/>
 | **Security & Compliance** | AWS Config, SCPs, GuardDuty, Macie, KMS, IAM Access Analyzer          | Defender for Cloud, Policies, Blueprints, Key Vault, Security Center | Security Command Center, Org Policies, Cloud KMS, Forseti (community) |
 | **Monitoring & Logging**  | CloudWatch, CloudTrail, X-Ray, AWS Config                             | Azure Monitor, Log Analytics, Activity Logs                          | Cloud Logging, Cloud Monitoring, Audit Logs, Error Reporting          |
 | **Automation & IaC**      | CloudFormation, Terraform, CDK, Control Tower                         | Bicep, ARM Templates, Terraform, Landing Zone Accelerator            | Terraform, Deployment Manager (legacy), GitOps (Config Connector)     |
-| **Cost Management**       | AWS Budgets, Cost Explorer, Cost Categories                           | Cost Management + Billing, Budgets, Advisor                          | Cloud Billing Reports, Budgets, Recommender, FinOps tools             |
-<br/>
+| **Cost Management**       | AWS Budgets, Cost Explorer, Cost Categories                           | Cost Management + Billing, Budgets, Advisor                          | Cloud Billing Reports, Budgets, Recommender, FinOps tools             | <br/>
+
 # Cloud-Agnostic Landing Zone Checklist
 You may leverage the below practical checklist to ensure your landing zone covers all the foundational elements — from identity to automation — regardless of the cloud provider.<br/>
 ### Cloud Landing Zone Checklist by Day 0 / Day 1 / Day 2
