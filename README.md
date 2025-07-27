@@ -44,7 +44,8 @@ Below table summarizes the elements in each CSP's : <br/>
 
 # Cloud-Agnostic Landing Zone Checklist
 You may leverage the below practical checklist to ensure your landing zone covers all the foundational elements — from identity to automation — regardless of the cloud provider.<br/>
-### 🗂️ Cloud Landing Zone Checklist by Day 0 / Day 1 / Day 2
+### Cloud Landing Zone Checklist by Day 0 / Day 1 / Day 2
+#### Day 0 – Planning & Design
 
 | **Category**              | **Key Activities**                                                                                                                                              |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -55,6 +56,28 @@ You may leverage the below practical checklist to ensure your landing zone cover
 | **Automation & IaC**      | - Set up Terraform/Bicep/CloudFormation baseline modules  <br> - Define Git repo structure  <br> - Plan CI/CD pipelines  <br> - Plan Policy-as-Code             |
 | **Cost Management**       | - Define budget controls  <br> - Plan tagging for cost allocation  <br> - Enable billing export or APIs                                                         |
 
+#### Day 1 – Implementation & Deployment
+
+| **Category**              | **Key Activities**                                                                                                                           |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Identity & Access**     | - Implement IAM roles/groups  <br> - Integrate SSO and MFA  <br> - Enforce least-privilege policies                                          |
+| **Resource Organization** | - Create folder/project/account structure  <br> - Apply naming conventions  <br> - Enforce tagging via policies                              |
+| **Networking**            | - Deploy VPC/VNet, subnets, routes, and firewalls  <br> - Set up DNS and hybrid connectivity (VPN/Interconnect)                              |
+| **Security & Compliance** | - Apply encryption at rest/in transit  <br> - Deploy baseline security tools (e.g., GuardDuty, SCC, Defender)  <br> - Implement org policies |
+| **Monitoring & Logging**  | - Enable centralized logging and audit trails  <br> - Set up log sinks and storage  <br> - Start basic metrics/alerting setup                |
+| **Automation & IaC**      | - Deploy environments using IaC  <br> - Integrate IaC into CI/CD  <br> - Validate using Policy-as-Code                                       |
+| **Cost Management**       | - Apply budgets and alerts  <br> - Enable detailed billing reports  <br> - Tag deployed resources                                            |
+#### Day 2 – Operations & Optimization
+
+| **Category**              | **Key Activities**                                                                                                           |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Identity & Access**     | - Audit IAM access regularly  <br> - Rotate credentials and keys  <br> - Monitor access logs                                 |
+| **Resource Organization** | - Refactor/optimize structure as needed  <br> - Review tagging consistency                                                   |
+| **Networking**            | - Monitor network traffic and update routes/firewalls as needed  <br> - Fine-tune hybrid links                               |
+| **Security & Compliance** | - Run periodic vulnerability scans and patching  <br> - Conduct compliance audits and reporting                              |
+| **Monitoring & Logging**  | - Refine dashboards and alerts  <br> - Integrate logs with SIEM  <br> - Optimize log retention and storage costs             |
+| **Automation & IaC**      | - Improve reusability of modules  <br> - Extend CI/CD to include drift detection  <br> - Add guardrails and pre-commit hooks |
+| **Cost Management**       | - Use cost reports for optimization  <br> - Apply right-sizing recommendations  <br> - Review chargeback reports             |
 
 
 ### ✅ Practical Landing Zone Checklist (Cloud-Agnostic)
