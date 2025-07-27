@@ -28,7 +28,7 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 
 <br/>The diagram below summarizes the core components of a cloud-agnostic Landing Zone across all major cloud providers. It visually represents the foundational elements — such as identity, networking, security, and automation — that are essential for building a secure and scalable environment in AWS, Azure, or GCP. <br/>
 
- <img width="790" height="578" alt="image" src="https://github.com/user-attachments/assets/ac56397d-2be4-4540-abc9-6bdfca46ba38" /> <br/>
+ <img width="790" height="578" alt="image" src="https://github.com/user-attachments/assets/ac56397d-2be4-4540-abc9-6bdfca46ba38" /> <br/><br/>
 
 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
@@ -43,7 +43,7 @@ Below table summarizes the elements in each CSP's : <br/>
 | **Monitoring & Logging**  | CloudWatch, CloudTrail, X-Ray, AWS Config                             | Azure Monitor, Log Analytics, Activity Logs                          | Cloud Logging, Cloud Monitoring, Audit Logs, Error Reporting          |
 | **Automation & IaC**      | CloudFormation, Terraform, CDK, Control Tower                         | Bicep, ARM Templates, Terraform, Landing Zone Accelerator            | Terraform, Deployment Manager (legacy), GitOps (Config Connector)     |
 | **Cost Management**       | AWS Budgets, Cost Explorer, Cost Categories                           | Cost Management + Billing, Budgets, Advisor                          | Cloud Billing Reports, Budgets, Recommender, FinOps tools             |
-
+<br/>
 # Cloud-Agnostic Landing Zone Checklist
 You may leverage the below practical checklist to ensure your landing zone covers all the foundational elements — from identity to automation — regardless of the cloud provider.<br/>
 ### Cloud Landing Zone Checklist by Day 0 / Day 1 / Day 2
