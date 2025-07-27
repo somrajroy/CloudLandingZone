@@ -16,13 +16,13 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 
 | **Core Element**          | **Description**                                                                                               |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Identity & Access**     | Defines **who can access what** — includes IAM roles, groups, SSO integration, and MFA enforcement            |
-| **Resource Organization** | Logical structure of your environment — folders, projects/accounts, naming conventions, and mandatory tagging |
+| **Identity & Access**     | Defines **who can access what** — includes **IAM roles, groups, SSO integration, and MFA enforcement**            |
+| **Resource Organization** | Logical structure of the cloud environment — hierarchy, folders, projects/accounts, naming conventions, and mandatory tagging |
 | **Networking**            | Set up of **VPCs, subnets, firewalls, routing**, and **DNS zones** for connectivity and segmentation          |
 | **Security & Compliance** | Guardrails like **encryption, policies, vulnerability scanning**, and audit readiness (CIS, ISO, NIST)        |
 | **Monitoring & Logging**  | Centralized **logging, metrics, alerts**, and **audit trails** to support visibility and incident response    |
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
-| **Cost Management**       | Implement **budgets, billing alerts**, cost dashboards, and **chargeback models** to control spend            |
+| **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
 
 # Appendix
