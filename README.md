@@ -44,7 +44,22 @@ Below table summarizes the elements in each CSP's : <br/>
 | **Automation & IaC**      | CloudFormation, Terraform, CDK, Control Tower                         | Bicep, ARM Templates, Terraform, Landing Zone Accelerator            | Terraform, Deployment Manager (legacy), GitOps (Config Connector)     |
 | **Cost Management**       | AWS Budgets, Cost Explorer, Cost Categories                           | Cost Management + Billing, Budgets, Advisor                          | Cloud Billing Reports, Budgets, Recommender, FinOps tools             | <br/>
 
-# Cloud-Agnostic Landing Zone Checklist by Day 0 / Day 1 / Day 2
+# Landing Zone Checklist (Cloud-Agnostic)
+
+| **Category**            | **Key Activities**                                                                                                                                     |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Identity & Access**   | - Configure IAM roles, policies, and groups  <br> - Set up SSO and MFA  <br> - Apply least-privilege access  <br> - Integrate with identity provider |
+| **Resource Organization** | - Define folder/account/project structure  <br> - Naming conventions and mandatory tags  <br> - Separate Dev/Test/Prod environments                 |
+| **Networking**          | - Define CIDR ranges and subnet layout  <br> - Configure VPC/VNet, routing, firewalls  <br> - Shared networking (Hub-Spoke)  <br> - Enable DNS, hybrid connectivity |
+| **Security & Compliance** | - Apply policies (Org policies/SCPs)  <br> - Enable encryption in transit/at rest  <br> - Use cloud-native security tools (Defender, GuardDuty, SCC)  <br> - Run compliance checks (CIS, NIST) |
+| **Monitoring & Logging** | - Centralize logs and audit trails  <br> - Metrics, alerting, and dashboards  <br> - Route logs to SIEM or storage for long-term retention            |
+| **Automation & IaC**    | - Use Terraform/Bicep/CloudFormation  <br> - Version control (e.g., Git)  <br> - CI/CD for provisioning  <br> - Policy-as-Code (OPA, Sentinel)       |
+| **Cost Management**     | - Set budgets and alerts  <br> - Enable detailed billing  <br> - Tag resources for cost attribution  <br> - Use cost optimization recommendations     |
+
+
+<img width="596" height="521" alt="image" src="https://github.com/user-attachments/assets/295d29fd-7735-4fd5-b4bb-5af0db482d92" />
+ <br/>
+ # Cloud-Agnostic Landing Zone Checklist by Day 0 / Day 1 / Day 2
 You may leverage the below practical checklist to ensure your landing zone covers all the foundational elements — from identity to automation — regardless of the cloud provider.<br/>
 ### Day 0 – Planning & Design
 
@@ -81,20 +96,7 @@ You may leverage the below practical checklist to ensure your landing zone cover
 | **Cost Management**       | - Use cost reports for optimization  <br> - Apply right-sizing recommendations  <br> - Review chargeback reports             |
 
 
-### ✅ Practical Landing Zone Checklist (Cloud-Agnostic)
 
-| **Category**            | **Key Activities**                                                                                                                                     |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Identity & Access**   | - Configure IAM roles, policies, and groups  <br> - Set up SSO and MFA  <br> - Apply least-privilege access  <br> - Integrate with identity provider |
-| **Resource Organization** | - Define folder/account/project structure  <br> - Naming conventions and mandatory tags  <br> - Separate Dev/Test/Prod environments                 |
-| **Networking**          | - Define CIDR ranges and subnet layout  <br> - Configure VPC/VNet, routing, firewalls  <br> - Shared networking (Hub-Spoke)  <br> - Enable DNS, hybrid connectivity |
-| **Security & Compliance** | - Apply policies (Org policies/SCPs)  <br> - Enable encryption in transit/at rest  <br> - Use cloud-native security tools (Defender, GuardDuty, SCC)  <br> - Run compliance checks (CIS, NIST) |
-| **Monitoring & Logging** | - Centralize logs and audit trails  <br> - Metrics, alerting, and dashboards  <br> - Route logs to SIEM or storage for long-term retention            |
-| **Automation & IaC**    | - Use Terraform/Bicep/CloudFormation  <br> - Version control (e.g., Git)  <br> - CI/CD for provisioning  <br> - Policy-as-Code (OPA, Sentinel)       |
-| **Cost Management**     | - Set budgets and alerts  <br> - Enable detailed billing  <br> - Tag resources for cost attribution  <br> - Use cost optimization recommendations     |
-
-
-<img width="596" height="521" alt="image" src="https://github.com/user-attachments/assets/295d29fd-7735-4fd5-b4bb-5af0db482d92" />
 
 
 # Appendix
