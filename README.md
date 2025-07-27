@@ -61,7 +61,7 @@ You may leverage the below practical checklist to ensure your landing zone cover
 |           | Security & Compliance   | - Apply encryption at rest/in transit  <br> - Deploy baseline security tools (e.g., GuardDuty, SCC, Defender)  <br> - Implement org policies               |
 |           | Monitoring & Logging    | - Enable centralized logging and audit trails  <br> - Set up log sinks and storage  <br> - Start basic metrics/alerting setup                             |
 |           | Automation & IaC        | - Deploy environments using IaC  <br> - Integrate IaC into CI/CD  <br> - Validate using Policy-as-Code                                                    |
-|           | Cost Management         | - Apply budgets and alerts  <br> - Enable detailed billing reports  <br> - Tag deployed resources                                                         |
+|           | Cost Management         | - Apply budgets and alerts  <br> - Enable detailed billing reports  <br> - Tag deployed resources                                                         |                                                      |
 
 | **Day 2** | Identity & Access       | - Audit IAM access regularly  <br> - Rotate credentials and keys  <br> - Monitor access logs                                                               |
 |           | Resource Organization   | - Refactor/optimize structure as needed  <br> - Review tagging consistency                                                                                 |
