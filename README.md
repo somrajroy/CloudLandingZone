@@ -8,7 +8,7 @@ A `Cloud Landing Zone` is a pre-configured Cloud Environment within a cloud prov
 - 📜 Rules & Regulations (Policies): Fire exits, safety codes.
 - 📈 Monitoring (Logging): Utility meters tracking usage.
 - 🤖 Automation (IaC - Provisioning & Management): Pre-wired systems for consistency. <br/><br/>
-A Cloud Landing Zone provides the digital equivalent of this foundational setup, enabling efficient, secure, and automated cloud adoption at scale. Automation ensures that every environment — whether for dev, staging, or production — is built and governed in a repeatable, scalable, and secure way.
+A `Cloud Landing Zone` provides the digital equivalent of this foundational setup, enabling efficient, secure, and automated cloud adoption at scale. Automation ensures that every environment — whether for dev, staging, or production — is built and governed in a repeatable, scalable, and secure way.
  <br/>
 
 # Introduction
