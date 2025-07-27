@@ -24,6 +24,19 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
+# Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
+Below table summarizes the elements in each CSP's : <br/>
+
+| **Core Element**          | **AWS**                                                               | **Azure**                                                            | **GCP**                                                               |
+| ------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **Identity & Access**     | IAM users, roles, policies, SSO via IAM Identity Center (ex SSO), MFA | Azure AD (Entra ID), RBAC, Conditional Access, MFA                   | Cloud IAM, Google Workspace federation, SSO, MFA                      |
+| **Resource Organization** | Organizations → OUs → Accounts                                        | Management Groups → Subscriptions → Resource Groups                  | Organization → Folders → Projects                                     |
+| **Networking**            | VPCs, Subnets, Route Tables, NACLs, Security Groups, Transit Gateway  | VNets, Subnets, NSGs, Route Tables, ExpressRoute, Azure Firewall     | VPCs, Subnets, Firewall Rules, Routes, Shared VPC, Cloud NAT          |
+| **Security & Compliance** | AWS Config, SCPs, GuardDuty, Macie, KMS, IAM Access Analyzer          | Defender for Cloud, Policies, Blueprints, Key Vault, Security Center | Security Command Center, Org Policies, Cloud KMS, Forseti (community) |
+| **Monitoring & Logging**  | CloudWatch, CloudTrail, X-Ray, AWS Config                             | Azure Monitor, Log Analytics, Activity Logs                          | Cloud Logging, Cloud Monitoring, Audit Logs, Error Reporting          |
+| **Automation & IaC**      | CloudFormation, Terraform, CDK, Control Tower                         | Bicep, ARM Templates, Terraform, Landing Zone Accelerator            | Terraform, Deployment Manager (legacy), GitOps (Config Connector)     |
+| **Cost Management**       | AWS Budgets, Cost Explorer, Cost Categories                           | Cost Management + Billing, Budgets, Advisor                          | Cloud Billing Reports, Budgets, Recommender, FinOps tools             |
+
 
 # Appendix
 Below are some additional resources and references for further learning: <br/>
