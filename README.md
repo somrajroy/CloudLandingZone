@@ -70,6 +70,7 @@ You may leverage the below practical checklist to ensure your landing zone cover
 |           | Monitoring & Logging    | - Refine dashboards and alerts  <br> - Integrate logs with SIEM  <br> - Optimize log retention and storage costs                                          |
 |           | Automation & IaC        | - Improve reusability of modules  <br> - Extend CI/CD to include drift detection  <br> - Add guardrails and pre-commit hooks                             |
 |           | Cost Management         | - Use cost reports for optimization  <br> - Apply right-sizing recommendations  <br> - Review chargeback reports                                          |
+                                     |
 
 
 <img width="596" height="521" alt="image" src="https://github.com/user-attachments/assets/295d29fd-7735-4fd5-b4bb-5af0db482d92" />
