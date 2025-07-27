@@ -100,7 +100,4 @@ You may leverage the below practical checklist to ensure your landing zone cover
 Below are some additional resources and references for further learning: <br/>
 1. [What is a Cloud Landing Zone?](https://www.appvia.io/blog/what-is-a-cloud-landing-zone)<br/>
 2. [Checklist : Building Azure Right: A Practical Checklist for Infrastructure Landing Zones](https://techcommunity.microsoft.com/blog/azureinfrastructureblog/building-azure-right-a-practical-checklist-for-infrastructure-landing-zones/4409975)<br/>
-3. [Enhancing Terraform Deployments with TFLint in GitHub Actions](https://dev.to/techielass/integrating-tflint-into-your-workflow-iea)<br/>
-4. [TFLint rules : terraform_unused_declarations](https://github.com/terraform-linters/tflint-ruleset-terraform/blob/main/docs/rules/terraform_unused_declarations.md)<br/>
-5. [TFLint AWS Complete ruleset](https://github.com/terraform-linters/tflint-ruleset-aws/blob/master/docs/rules/README.md)<br/>
-6. [TFLint with Jenkins](https://awstip.com/tflint-with-jenkins-858957b87c7e)<br/>
+3. [What are Day-0, Day-1, and Day-2 Operations?](https://spacelift.io/blog/day-0-day-1-day-2-operations)<br/>
