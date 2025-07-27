@@ -10,6 +10,7 @@ A `Cloud Landing Zone` is a pre-configured Cloud Environment within a cloud prov
 - 🤖 Automation (IaC - Provisioning & Management): Pre-wired systems for consistency. <br/><br/>
 A `Cloud Landing Zone` provides the digital equivalent of this foundational setup, enabling efficient, secure, and automated cloud adoption at scale. Automation ensures that every environment — whether for dev, staging, or production — is built and governed in a repeatable, scalable, and secure way.
  <br/>
+ While the specific services, naming conventions, and implementation details differ across GCP, AWS, and Azure, the fundamental purpose and architectural principles of a cloud landing zone remain consistent: to deliver a secure, compliant, scalable, and well-governed foundation that accelerates cloud adoption and supports diverse workloads. <br/>
 
 # Cloud-Agnostic Core Elements of a Landing Zone
 These foundational elements apply across all major cloud providers — AWS, Azure, and GCP — ensuring secure, scalable, and consistent cloud adoption: <br/>
