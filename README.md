@@ -48,9 +48,12 @@ Here is why Tagging is crucial for any enterprise-grade landing zone :<br/>
 ### Tagging strategy : The Metadata Backbone of a Cloud Landing Zone
 As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and effective tagging standard should be applied which aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations. A well-defined tagging schema is not just a best practice — it’s a prerequisite for enterprise-grade cloud governance. From my experience on working with all 3 Major CSP's (AWS/Azure/GCP), below Cloud-agnostic tagging standard is efficiennt, simple, consistent, and automation-friendly.<br/>
  * `Tagging standard` : apply `lowercase keys` and `snake_case` formatting to ensure compatibility with CSP billing exports/export tools, SQL-style queries, SQL-based analytics, infrastructure-as-code pipelines and policy enforcement tools.<br/>
+ * `snake_case` formatting avoids export issues and aligns with SQL-style naming conventions, which all 3 CSP's.<br/>
+ * `Lowercase keys` prevent inconsistencies across CSPs where tag key sensitivity varies (e.g., AWS is case-sensitive, GCP is not).
+<br/>
  * `Snake Case` is an industry standard naming convention where :
-    * All letters are lowercase<br/>
-    * Words are separated by underscores (_)<br/>
+    * All letters are lowercase.<br/>
+    * Words are separated by underscores `(_)`<br/>
     * Example : cost_center_id <br/>
     * This approach aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations. <br/>
 
