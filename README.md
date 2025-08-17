@@ -50,7 +50,7 @@ As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and 
 ### CSP Constraints differ
 Azure calls them "tags" but limits key length (512 chars for values), AWS has a 128-char limit for keys, and GCP’s labels have 63-char limits with lowercase requirements.
    * AWS → Tag keys are case-sensitive, allow spaces, mixed case, and special chars (but this flexibility can cause inconsistency).
-   * Azure → Tag names are case-insensitive, limited to 512 characters, disallow some symbols.
+   * Azure → Tag names are case-insensitive, limited to 512 characters, disallow some symbols. Tag values are case-sensitive.
    * GCP → Labels (their tag equivalent) are the most restrictive: must be lowercase letters, numbers, underscores, max 63 chars, and must start with a letter.
    * Cross-cloud automation needs one rule : If customers are building automation pipelines (Terraform, CI/CD, governance), they need tags/labels that work consistently across AWS, Azure, and GCP.
 
