@@ -59,7 +59,7 @@ As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and 
     * Explicitly avoid special characters beyond underscores (e.g., no spaces, colons, or periods).
  * Avoidance of spaces, mixed casing and special characters prevent export and automation issues and ensures compatibility with IaC tools like Terraform and CI/CD pipelines across all clouds,
  * This approach is not only technically sound but also forward-compatible with enterprise automation, reporting, and policy enforcement. It aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations.
- * As this is the strictest standard (snake_case + lowercase), so this format will work everywhere.
+ * The approach is universal because it takes the most restrictive path (all lowercase, snake_case) which guarantees compatibility everywhere, rather than trying to accommodate varying provider behaviors. This `strictest common denominator` approach ensures reliability and consistency across all three CSPs while supporting enterprise-scale operations and automation requirements.
  * Recommended Enforcement mechanisms are AWS Tag Policies, Azure Policy & GCP Organization Policies to ensure compliance.
 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
