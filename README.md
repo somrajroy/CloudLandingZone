@@ -51,13 +51,16 @@ As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and 
  * Apply `lowercase keys` and `snake_case` formatting to ensure compatibility with CSP billing exports/export tools, SQL-style queries, SQL-based analytics, infrastructure-as-code pipelines and policy enforcement tools.<br/>
  * `snake_case` formatting avoids export issues and aligns with SQL-style naming conventions, which all 3 CSP's.<br/>
  * `Lowercase keys` prevent inconsistencies across CSPs where tag key sensitivity varies (e.g., AWS is case-sensitive, GCP is not).
+ *  `lowercase values' ensured consistency in automation and reporting.
  * `Snake Case` is an industry standard naming convention where :
     * All letters are lowercase.<br/>
     * Words are separated by underscores `(_)`<br/>
     * Example : cost_center_id <br/>
+    * Explicitly avoid special characters beyond underscores (e.g., no spaces, colons, or periods).
  * Avoidance of spaces, mixed casing and special characters prevent export and automation issues and ensures compatibility with IaC tools like Terraform and CI/CD pipelines across all clouds,
  * This approach is not only technically sound but also forward-compatible with enterprise automation, reporting, and policy enforcement. It aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations.
  * As this is the strictest standard (snake_case + lowercase), so this format will work everywhere.
+ * Recommended Enforcement mechanisms are AWS Tag Policies, Azure Policy & GCP Organization Policies to ensure compliance.
 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
 Below table summarizes the elements in each CSP's : <br/>
