@@ -66,7 +66,7 @@ Azure calls them "tags" but limits key length (512 chars for values), AWS has a 
     * Explicitly avoid special characters beyond underscores (e.g., no spaces, colons, or periods).
  * Avoidance of spaces, mixed casing and special characters prevent export and automation issues and ensures compatibility with IaC tools like Terraform and CI/CD pipelines across all clouds,
  * This approach is not only technically sound but also forward-compatible with enterprise automation, reporting, and policy enforcement. It aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations.
- * `Lowest common denominator = reliability`: Since GCP is the strictest, if customers design their enterprise tag policy as “all lowercase, snake_case”, those tags will work without modification in AWS and Azure too.
+ * `Lowest common denominator = reliability`: Since GCP is the strictest, if customers design their enterprise tag policy as `all lowercase & snake_case`, those tags will work without modification in AWS and Azure too.
    * Example: `cost_center=finance_ops` works everywhere.
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
  * Hence this approach is universal because it takes the most restrictive path (all lowercase, snake_case) which guarantees compatibility everywhere, rather than trying to accommodate varying provider behaviors. This `strictest common denominator` approach ensures reliability and consistency across all three CSPs while supporting enterprise-scale operations and automation requirements.
