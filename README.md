@@ -55,7 +55,7 @@ As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and 
     * All letters are lowercase.<br/>
     * Words are separated by underscores `(_)`<br/>
     * Example : cost_center_id <br/>
- * Avoidance of spaces and special characters ensures compatibility with IaC tools like Terraform and CI/CD pipelines across all clouds.
+ * Avoidance of spaces, mixed casing and special characters prevent export and automation issues and ensures compatibility with IaC tools like Terraform and CI/CD pipelines across all clouds,
  * This approach is not only technically sound but also forward-compatible with enterprise automation, reporting, and policy enforcement. It aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations.
  * As this is the strictest standard (snake_case + lowercase), so this format will work everywhere.
 
