@@ -32,7 +32,7 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
-# Tagging Strategy: The Non-Negotiable Foundation of an Enterprise Landing Zone & Metadata Backbone of a Cloud Landing Zone
+# Tagging : The Non-Negotiable Foundation of an Enterprise Landing Zone
 Tagging is a crucial and top-priority component of a Well-Architected enterprise cloud landing zone, regardless of the cloud provider (AWS, Azure, GCP). Tagging serves as a foundational mechanism for resource organization, governance, security enforcement, cost management, environment separation, automation, and compliance, which are core objectives of a landing zone. <br/>
 
 Here is why Tagging is crucial for any enterprise-grade landing zone :<br/>
@@ -45,7 +45,14 @@ Here is why Tagging is crucial for any enterprise-grade landing zone :<br/>
  * All three CSPs emphasize tagging in their respective Well-Architected Frameworks and governance models. Poor tagging leads to billing ambiguity, automation failures, and governance blind spots — especially in multi-org, multi-environment setups. Given its role in these critical areas, tagging is not just a "nice-to-have" but a top-priority element of a landing zone, as it directly impacts operational efficiency, cost optimization, and compliance. <br/>
  * While often viewed as a simple operational task, a well-defined tagging strategy is the primary mechanism for enabling automated governance, security, enterprise-wide compliance and FinOps. Tags act as metadata for all cloud resources, allowing for granular control and visibility.<br/>
 
-
+### Tagging strategy : The Metadata Backbone of a Cloud Landing Zone
+As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and effective tagging standard should be applied which aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations. A well-defined tagging schema is not just a best practice — it’s a prerequisite for enterprise-grade cloud governance. From my experience on working with all 3 Major CSP's (AWS/Azure/GCP), below Cloud-agnostic tagging standard is efficiennt, simple, consistent, and automation-friendly.<br/>
+ * `Tagging standard` : apply `lowercase keys` and `snake_case` formatting to ensure compatibility with CSP billing exports/export tools, SQL-style queries, SQL-based analytics, infrastructure-as-code pipelines and policy enforcement tools.<br/>
+ * `Snake Case` is an industry standard naming convention where :
+    * All letters are lowercase<br/>
+    * Words are separated by underscores (_)<br/>
+    * Example : cost_center_id <br/>
+    * This approach aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations. <br/>
 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
 Below table summarizes the elements in each CSP's : <br/>
