@@ -33,7 +33,7 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
 # Tagging Strategy: The Non-Negotiable Foundation of an Enterprise Landing Zone & Metadata Backbone of a Cloud Landing Zone
-Tagging is a crucial and top-priority component of a Well-Architected enterprise cloud landing zone, regardless of the cloud provider (AWS, Azure, GCP). Tagging serves as a foundational mechanism for resource organization, governance, security enforcement, cost management, environment separation, automation, and compliance, which are core objectives of a landing zone. While often viewed as a simple operational task, a well-defined tagging strategy is the primary mechanism for enabling automated governance, security, enterprise-wide compliance and FinOps (Financial Operations). Tags act as metadata for all cloud resources, allowing for granular control and visibility. <br/>
+Tagging is a crucial and top-priority component of a Well-Architected enterprise cloud landing zone, regardless of the cloud provider (AWS, Azure, GCP). Tagging serves as a foundational mechanism for resource organization, governance, security enforcement, cost management, environment separation, automation, and compliance, which are core objectives of a landing zone. <br/>
 
 Here is why Tagging is crucial for any enterprise-grade landing zone :<br/>
  * `Resource Organization & lifecycle management` : Tags provide metadata to categorize and group resources (e.g., by environment, department, or project), making it easier to manage complex cloud environments with hundreds or thousands of resources.<br/>
@@ -43,6 +43,7 @@ Here is why Tagging is crucial for any enterprise-grade landing zone :<br/>
  * `Compliance & Security` : Tags allow enforcement of regulatory policies per data classification, region, or business unit. They can define access controls (e.g., restricting access to resources tagged sensitivity=high) and integrate with security tools like AWS GuardDuty or GCP Security Command Center. <br/>
  * `Enterprise scalability` — Adding standard tags early prevents downstream retrofitting pain. <br/>
  * All three CSPs emphasize tagging in their respective Well-Architected Frameworks and governance models. Poor tagging leads to billing ambiguity, automation failures, and governance blind spots — especially in multi-org, multi-environment setups. Given its role in these critical areas, tagging is not just a "nice-to-have" but a top-priority element of a landing zone, as it directly impacts operational efficiency, cost optimization, and compliance. <br/>
+ * While often viewed as a simple operational task, a well-defined tagging strategy is the primary mechanism for enabling automated governance, security, enterprise-wide compliance and FinOps. Tags act as metadata for all cloud resources, allowing for granular control and visibility.<br/>
 
 
 
