@@ -54,7 +54,8 @@ As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and 
     * All letters are lowercase.<br/>
     * Words are separated by underscores `(_)`<br/>
     * Example : cost_center_id <br/>
-    * This approach aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations. <br/>
+ * Avoidance of spaces and special characters ensures compatibility with IaC tools like Terraform and CI/CD pipelines across all clouds.
+ * This approach is not only technically sound but also forward-compatible with enterprise automation, reporting, and policy enforcement. It aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations. <br/>
 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
 Below table summarizes the elements in each CSP's : <br/>
