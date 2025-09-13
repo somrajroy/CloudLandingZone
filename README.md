@@ -63,6 +63,7 @@ Tagging rules differ across CSPs, which often creates inconsistency in multi-clo
 
 Below are enterprise-grade sample tags that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof for AWS, GCP and Azure — meaning FinOps dashboards, IaC modules, and compliance policies will be portable across clouds. <br/>
 #### Mnadatory Tags (cross-cloud baseline) 
+These are essential for governance, FinOps, automation, and compliance.<br/>
 
 | **Tag Key**           | **Purpose**                  | **Why Mandatory (All CSPs)**                                                                                  |
 | --------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -76,14 +77,15 @@ Below are enterprise-grade sample tags that you can leverage. If you use this di
 
 
 #### Discretionary Tags (Recommended but Context-Dependent)
+These tags add operational depth and can be adopted based on customer maturity or tooling.<br/>
 
 | **Tag Key**       | **Purpose**                   | **Why Useful**                                                                                 |
 | ----------------- | ----------------------------- | ---------------------------------------------------------------------------------------------- |
 | `owner_bu`        | Identity / Ownership          | Links resources to business units for segmentation + reporting.                                |
 | `requester_email` | Identity / Ownership          | Tracks provisioning requests  (audit trails, approvals).                                   |
 | `billing_code`    | Billing / FinOps              | If finance uses codes separate from cost centers.                                              |
-| `lifecycle`       | Environment / Lifecycle       | Automates cleanup, decommissioning, or archiving. E.g., `ephemeral`, `persistent`.             |
-| `expiry_date`     | Environment / Lifecycle       | Forces cleanup of temporary resources. ISO 8601 format for automation (`YYYY-MM-DD`).          |
+| `lifecycle`       | Environment / Lifecycle       | Indicates resource status (e.g., ephemeral, persistent). Aids cleanup automation.              |
+| `expiry_date`     | Environment / Lifecycle       | Forces cleanup of temporary resources. ISO 8601 format for automation (`YYYY-MM-DD`). Mandatory for ephemeral resources. Can act as a self-destruct timer          |
 | `compliance`      | Security & Compliance         | Identifies regulated workloads (e.g., `pci_dss`, `iso_27001`).                                 |
 | `criticality`     | Security & Compliance         | Business tier (`tier_1`, `tier_2`, `tier_3`). Can drive backup, DR, monitoring automation.     |
 | `region`          | Environment / Lifecycle       | For multi-region governance, policy enforcement.                                               |
