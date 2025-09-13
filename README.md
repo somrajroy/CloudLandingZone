@@ -64,7 +64,7 @@ Tagging rules differ across CSPs, which often creates inconsistency in multi-clo
 Below are enterprise-grade sample tags that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof for AWS, GCP and Azure — meaning FinOps dashboards, IaC modules, and compliance policies will be portable across clouds. <br/>
 #### Mnadatory Tags (cross-cloud baseline) 
 These are essential for governance, FinOps, automation, and compliance. Minimum set for every resource: env, cost_center, owner_email.<br/>
-CSP Validation:
+CSP Validation (always cross-verify from official links):
    * AWS: Key ≤ 128 chars, value ≤ 256 chars.
    * Azure: Key ≤ 512 chars, value ≤ 256 chars.
    * GCP: Key ≤ 63 chars, lowercase letters, numbers, underscores, dashes; must start with a letter.
