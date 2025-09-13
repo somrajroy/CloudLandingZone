@@ -46,14 +46,7 @@ Here is why Tagging is crucial for any enterprise-grade landing zone :<br/>
  * Tagging enhances reporting accuracy and simplifies management across multiple regions and services. It acts as metadata for all cloud resources, allowing for granular control and visibility.<br/>
 
 ### Tagging strategy : The Metadata Backbone of a Cloud Landing Zone
-As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and effective tagging standard should be applied which aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations. A well-defined tagging schema is not just a best practice — it’s a prerequisite for enterprise-grade cloud governance. From my experience on working with all 3 Major CSP's (AWS/Azure/GCP), below Cloud-agnostic tagging standard is universal, efficiennt, consistent, and automation-friendly.<br/>
-### CSP Constraints differ
-Azure calls them "tags" but limits key length (512 chars for values), AWS has a 128-char limit for keys, and GCP’s labels have 63-char limits with lowercase requirements.
-   * AWS → Tag keys are case-sensitive, allow spaces, mixed case, and special chars (but this flexibility can cause inconsistency).
-   * Azure → Tag names are case-insensitive, limited to 512 characters, disallow some symbols. Tag values are case-sensitive.
-   * GCP → Labels (their tag equivalent) are the most restrictive: must be lowercase letters, numbers, underscores, max 63 chars, and must start with a letter.
-   * Cross-cloud automation needs one rule : If customers are building automation pipelines (Terraform, CI/CD, governance), they need tags/labels that work consistently across AWS, Azure, and GCP.
-
+As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and effective tagging standard should be applied which aligns with FinOps principles and the Well-Architected Frameworks of all three CSPs, ensuring scalable operations across multiple environments and organizations. A well-defined tagging schema is not just a best practice — it’s a prerequisite for enterprise-grade cloud governance. From my experience on working with all 3 Major CSP's (AWS/Azure/GCP), below Cloud-agnostic tagging standard is universal, efficient, consistent, and automation-friendly. It is universal because it follows the most restrictive convention — `all lowercase`, `snake_case`— which guarantees compatibility across AWS, Azure, and GCP. By adopting this `strictest common denominator` strategy, the tagging becomes reliable, automation-friendly and consistent. This approach ensures it is fully resilient to provider-specific limitations or differences, thereby simplifying automation and preventing issues.
 #### Cloud Agnostic Tagging standards 
  * Apply `lowercase keys` and `snake_case` formatting to ensure compatibility with CSP billing exports/export tools, SQL-style queries, SQL-based analytics, infrastructure-as-code pipelines and policy enforcement tools.<br/>
  * `snake_case` formatting avoids export issues and aligns with SQL-style naming conventions, which all 3 CSP's.<br/>
@@ -71,6 +64,13 @@ Azure calls them "tags" but limits key length (512 chars for values), AWS has a 
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
  * Hence this approach is universal because it takes the most restrictive path (all lowercase, snake_case) which guarantees compatibility everywhere, rather than trying to accommodate varying provider behaviors. This `strictest common denominator` approach ensures reliability and consistency across all three CSPs while supporting enterprise-scale operations and automation requirements.
  * Recommended Enforcement mechanisms are AWS Tag Policies, Azure Policy & GCP Organization Policies to ensure compliance.
+
+### CSP Constraints differ
+Azure calls them "tags" but limits key length (512 chars for values), AWS has a 128-char limit for keys, and GCP’s labels (i.e. tags in AWS/Azure) have 63-char limits with lowercase requirements.
+   * AWS → Tag keys are case-sensitive, allow spaces, mixed case, and special chars (but this flexibility can cause inconsistency).
+   * Azure → Tag names are case-insensitive, limited to 512 characters, disallow some symbols. Tag values are case-sensitive.
+   * GCP → Labels (their tag equivalent) are the most restrictive: must be lowercase letters, numbers, underscores, max 63 chars, and must start with a letter.
+   * Cross-cloud automation needs one rule : If customers are building automation pipelines (Terraform, CI/CD, governance), they need tags/labels that work consistently across AWS, Azure, and GCP.
 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
 Below table summarizes the elements in each CSP's : <br/>
