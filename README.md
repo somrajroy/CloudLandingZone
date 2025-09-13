@@ -63,7 +63,11 @@ Tagging rules differ across CSPs, which often creates inconsistency in multi-clo
 
 Below are enterprise-grade sample tags that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof for AWS, GCP and Azure — meaning FinOps dashboards, IaC modules, and compliance policies will be portable across clouds. <br/>
 #### Mnadatory Tags (cross-cloud baseline) 
-These are essential for governance, FinOps, automation, and compliance.<br/>
+These are essential for governance, FinOps, automation, and compliance. Minimum set for every resource: env, cost_center, owner_email.<br/>
+CSP Validation:
+   * AWS: Key ≤ 128 chars, value ≤ 256 chars.
+   * Azure: Key ≤ 512 chars, value ≤ 256 chars.
+   * GCP: Key ≤ 63 chars, lowercase letters, numbers, underscores, dashes; must start with a letter.
 
 | **Tag Key**           | **Purpose**                  | **Why Mandatory (All CSPs)**                                                                                  |
 | --------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -77,20 +81,20 @@ These are essential for governance, FinOps, automation, and compliance.<br/>
 
 
 #### Discretionary Tags (Recommended but Context-Dependent)
-These tags add operational depth and can be adopted based on customer maturity or tooling.<br/>
+Leverage these tags based on project complexity, compliance needs, or multi-cloud requirements. There can be other tags too (e.g. `automation_flag`, `dr_tier` etc.) <br/>
 
 | **Tag Key**       | **Purpose**                   | **Why Useful**                                                                                 |
 | ----------------- | ----------------------------- | ---------------------------------------------------------------------------------------------- |
 | `owner_bu`        | Identity / Ownership          | Links resources to business units for segmentation + reporting.                                |
 | `requester_email` | Identity / Ownership          | Tracks provisioning requests  (audit trails, approvals).                                   |
 | `billing_code`    | Billing / FinOps              | If finance uses codes separate from cost centers.                                              |
-| `lifecycle`       | Environment / Lifecycle       | Indicates resource status (e.g., ephemeral, persistent). Aids cleanup automation.              |
+| `lifecycle`       | Lifecycle / Automation        | Indicates resource status (e.g., ephemeral, persistent). Aids cleanup automation.              |
 | `expiry_date`     | Environment / Lifecycle       | Forces cleanup of temporary resources. ISO 8601 format for automation (`YYYY-MM-DD`). Mandatory for ephemeral resources. Can act as a self-destruct timer          |
-| `compliance`      | Security & Compliance         | Identifies regulated workloads (e.g., `pci_dss`, `iso_27001`).                                 |
-| `criticality`     | Security & Compliance         | Business tier (`tier_1`, `tier_2`, `tier_3`). Can drive backup, DR, monitoring automation.     |
+| `compliance`      | Security & Compliance         | Flags regulated workloads (e.g., `pci_dss`, `iso_27001`). Supports audit and policy automation.                                |
+| `criticality`     | Security & Compliance         | Business tier/resource importance (`tier_1`, `tier_2`, `tier_3`). Can drive backup, DR, monitoring automation or de-provisioning policies.     |
 | `region`          | Environment / Lifecycle       | For multi-region governance, policy enforcement.                                               |
-| `managed_by`      | Operations / Automation       | Identifies provisioning method (`terraform`, `manual`, `ansible`). Helps IaC drift management. |
-| `support_tier`    | Operations / SLA              | SLA or support level mapping (optional).                                                       |
+| `managed_by`      | Operations / Automation       | Identifies provisioning method (`terraform`, `manual`, `ansible`). Helps IaC drift management/scope. |
+| `support_tier`    | Operations / SLA              | SLA or support level mapping (e.g., gold, silver). Can be useful for support prioritization or tailored monitoring.                                                       |
 
 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
