@@ -62,7 +62,7 @@ Tagging rules differ across CSPs, which often creates inconsistency in multi-clo
 ### Cloud-Agnostic Tagging Matrix for Landing Zones
 
 Below are enterprise-grade sample tags that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof for AWS, GCP and Azure — meaning FinOps dashboards, IaC modules, and compliance policies will be portable across clouds. <br/>
-#### Mnadatory Tags (cross-cloud baseline) <br/>
+#### Mnadatory Tags (cross-cloud baseline) 
 
 | **Tag Key**           | **Purpose**                  | **Why Mandatory (All CSPs)**                                                                                  |
 | --------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -75,7 +75,7 @@ Below are enterprise-grade sample tags that you can leverage. If you use this di
 | `data_classification` | Security & Compliance        | Defines data sensitivity (e.g., `public`, `confidential`, `pii`). Drives policies & compliance posture.       |
 
 <br/>
-#### Discretionary Tags (Recommended but Context-Dependent)<br/><br/>
+#### Discretionary Tags (Recommended but Context-Dependent)
 
 | **Tag Key**       | **Purpose**                   | **Why Useful**                                                                                 |
 | ----------------- | ----------------------------- | ---------------------------------------------------------------------------------------------- |
