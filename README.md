@@ -36,22 +36,21 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 `Tagging` is a crucial and top-priority component of a `Well-Architected enterprise-cloud landing zone`, regardless of the cloud provider (AWS, Azure, GCP). Tagging serves as a foundational mechanism for resource organization, governance, security enforcement, cost management, environment separation, automation, and compliance, which are core objectives of a landing zone. <br/>
 
 ### Tagging strategy : The Metadata Backbone of a Cloud Landing Zone
-As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and effective tagging standard should be applied which aligns with `FinOps principles` and the `Well-Architected Frameworks` of all three CSPs, ensuring scalable operations & automation across multiple environments and organizations. From my experience on working with all 3 Major CSP's (AWS/Azure/GCP), below Cloud-agnostic tagging standard is universal, efficient, consistent, and automation-friendly. It is universal because it follows the most restrictive convention — `all lowercase`, `snake_case`— which guarantees compatibility across AWS, Azure, and GCP.  This approach ensures it is fully resilient to provider-specific limitations or differences, thereby simplifying automation and preventing issues.
+As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and effective tagging standard should be applied which aligns with `FinOps principles` and the `Well-Architected Frameworks` of all three CSPs, ensuring scalable operations & automation across multiple environments and organizations. Below Cloud-agnostic tagging standard is universal, efficient, consistent, and automation-friendly and is fully resilient to provider-specific limitations or differences, thereby simplifying automation and preventing issues.
 #### Cloud Agnostic Tagging standards
- * A cloud-agnostic tagging strategy adopts `lowercase` `snake_case` for both `keys (e.g., cost_center_id, owner_email)` and `values (e.g., env=prod)`, `limited to 63 characters`, to meet GCP’s strict label constraints (lowercase, letters, numbers, underscores only), while ensuring compatibility with AWS (128-char key limit, case-sensitive) and Azure (512-char key limit, case-insensitive names). Mandatory tags like env, cost_center, owner, application, and project support cost tracking, compliance, and automation.  
- * So to summarize apply/Use `lowercase` and `snake_case`, for both keys (e.g., cost_center_id, owner_email) and values (e.g., env=prod), limited to 63 characters, formatting to ensure compatibility with CSP billing exports, SQL queries, analytics, IaC pipelines, and policy enforcement tools (e.g., AWS Tag Policies, Azure Policy, GCP Organization Policies).
- * `snake_case` formatting avoids export issues and aligns with SQL-style naming conventions, which all 3 CSP's.<br/>
- * `lowercase` & `snake_case` keys and values prevent inconsistencies across CSPs where tag key sensitivity varies (e.g., AWS is case-sensitive, GCP is not).
+ * The cloud-agnostic tagging strategy adopts `lowercase` and `snake_case` for both `keys (e.g., cost_center_id, owner_email)` and `values (e.g., env=prod)`, `limited to 63 characters`, to meet GCP’s strict label constraints (lowercase, letters, numbers, underscores only), while ensuring compatibility with AWS (128-char key limit, case-sensitive) and Azure (512-char key limit, case-insensitive names).
+ * In summary the format is - `lowercase` + `snake_case` (max 63 chars for keys, to be GCP-safe — stricter than AWS/Azure), for `both keys (e.g., cost_center_id, owner_email) and values (e.g., env=prod)`.
+ * `lowercase` & `snake_case` keys and values prevent inconsistencies across CSPs where tag key sensitivity varies (e.g., AWS is case-sensitive, GCP is not). `snake_case` formatting avoids export issues and aligns with SQL-style naming conventions, which all 3 CSP's.
+ * Tag `values` should be lowercase where possible, except for IDs/emails where case sensitivity is required.
  * `Snake Case` is an industry standard naming convention where :
     * All letters are lowercase.<br/>
     * Words are separated by underscores `(_)`
     * Example : cost_center_id
     * Explicitly avoid special characters beyond underscores (e.g., no spaces, colons, or periods).
- * This approach is not only technically sound but also forward-compatible with enterprise automation, reporting, and policy enforcement. It aligns with `FinOps principles` and the `Well-Architected Frameworks` of all three CSPs, ensuring scalable operations across multiple environments and organizations.
- * `Lowest common denominator = reliability`: Since GCP is the strictest, if customers design their enterprise tag policy as `all lowercase & snake_case`, those tags will work without modification in AWS and Azure too.
+    * Recommended Tag Enforcement mechanisms are AWS Tag Policies, Azure Policy & GCP Organization Policies to ensure compliance. This approach is not only technically sound but also forward-compatible with enterprise automation, reporting, and policy enforcement. 
+ * `Lowest common denominator = universal and reliability`: Since GCP is the strictest, if customers design their enterprise tag policy as `all lowercase & snake_case`, those tags will work without modification in AWS and Azure too.
    * Example: `cost_center=finance_ops` works everywhere.
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
-   * Recommended Enforcement mechanisms are AWS Tag Policies, Azure Policy & GCP Organization Policies to ensure compliance.
    * In `multi-cloud designs`, always follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably.<br/>
 ### CSP Tagging Constraints (Why strict standards matter)
 Tagging rules differ across CSPs, which often creates inconsistency in multi-cloud environments:
