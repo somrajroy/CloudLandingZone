@@ -64,11 +64,11 @@ As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and 
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
  * Hence this approach is universal because it takes the most restrictive path (all lowercase, snake_case) which guarantees compatibility everywhere, rather than trying to accommodate varying provider behaviors. This `strictest common denominator` approach ensures reliability and consistency across all three CSPs while supporting enterprise-scale operations and automation requirements.
  * Recommended Enforcement mechanisms are AWS Tag Policies, Azure Policy & GCP Organization Policies to ensure compliance.
-### CSP Constraints differ - keep this in mind
-Azure calls them "tags" but limits key length (512 chars for values), AWS has a 128-char limit for keys, and GCP’s labels (i.e. tags in AWS/Azure) have 63-char limits with lowercase requirements.
-   * AWS → Tag keys are case-sensitive, allow spaces, mixed case, and special chars (but this flexibility can cause inconsistency).
-   * Azure → Tag names are case-insensitive, limited to 512 characters, disallow some symbols. Tag values are case-sensitive.
-   * GCP → Labels (their tag equivalent) are the most restrictive: must be lowercase letters, numbers, underscores, max 63 chars, and must start with a letter.
+### CSP Tagging Constraints (Why strict standards matter)
+Tagging rules differ across CSPs, which often creates inconsistency in multi-cloud environments:
+   * AWS → Flexible: keys are [case-sensitive, allow spaces, mixed case, and special characters (but this flexibility causes inconsistency)](https://docs.aws.amazon.com/mediaconnect/latest/ug/tagging-restrictions.html). AWS also provides a sample [tagging dictionary based on recommended mandatory and discretionary tags](https://aws.amazon.com/solutions/guidance/tagging-on-aws/).
+   * Azure → More limits. [Keys are case-insensitive (values are case-sensitive), up to 512 chars, some symbols disallowed](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources).
+   * GCP → [Labels are the most restrictive](https://cloud.google.com/compute/docs/labeling-resources): lowercase only, numbers/underscores allowed, max 63 chars, must start with a letter.
    * Cross-cloud automation needs one rule : If customers are building automation pipelines (Terraform, CI/CD, governance), they need tags/labels that work consistently across AWS, Azure, and GCP.
 #### Benefits for customers in having a 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
