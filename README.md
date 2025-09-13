@@ -68,11 +68,11 @@ Below are enterprise-grade sample tags that you can leverage. If you use this di
 | --------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `env`                 | Environment / Lifecycle      | Critical for FinOps, security, and policy enforcement. Values: `dev`, `stage`, `prod`, `dr`. Required for core governance.                  |
 | `cost_center`         | Billing / FinOps             | Enables chargeback, budget alerts, FinOps reporting. Works in automation and aligns with enterprise finance models. Crucial for financial accountability & is the primary FinOps identifier for a business unit's spend.|
-| `owner_email`         | Identity / Ownership         | Accountability + automation (approvals, alerts). Replaces vague `Owner`.                                      |
+| `owner_email`         | Identity / Ownership         | Fundamental for Accountability + automation (approvals, alerts, decommission notices). Enhances governance.                                       |
 | `contact_email`       | Identity / Ownership         | Ops contact for support/escalation. Ensures clear operational responsibility.                                 |
-| `app_name`            | Billing / FinOps             | Unique app/service identifier (e.g., `energy_ai`). Helps cost attribution and monitoring.                     |
-| `project_name`        | Billing / FinOps / Ownership | Logical grouping/team mapping. Can merge with `app_name` if same.                                             |
-| `data_classification` | Security & Compliance        | Defines data sensitivity (e.g., `public`, `confidential`, `pii`). Drives policies & compliance posture.       |
+| `app_name`            | Billing / FinOps             | Identifies application or service. Helps cost attribution, monitoring & resource grouping.                     |
+| `project_name`        | Billing / FinOps / Ownership | Logical grouping/team mapping. Can merge with `app_name` if identical.                                             |
+| `data_classification` | Security & Compliance        | Indicates data sensitivity (e.g., `public`, `confidential`, `pii`). Drives security policies & compliance posture.       |
 
 
 #### Discretionary Tags (Recommended but Context-Dependent)
@@ -80,7 +80,7 @@ Below are enterprise-grade sample tags that you can leverage. If you use this di
 | **Tag Key**       | **Purpose**                   | **Why Useful**                                                                                 |
 | ----------------- | ----------------------------- | ---------------------------------------------------------------------------------------------- |
 | `owner_bu`        | Identity / Ownership          | Links resources to business units for segmentation + reporting.                                |
-| `requester_email` | Identity / Provisioning Audit | Tracks who requested the resource (audit trails, approvals).                                   |
+| `requester_email` | Identity / Ownership          | Tracks provisioning requests  (audit trails, approvals).                                   |
 | `billing_code`    | Billing / FinOps              | If finance uses codes separate from cost centers.                                              |
 | `lifecycle`       | Environment / Lifecycle       | Automates cleanup, decommissioning, or archiving. E.g., `ephemeral`, `persistent`.             |
 | `expiry_date`     | Environment / Lifecycle       | Forces cleanup of temporary resources. ISO 8601 format for automation (`YYYY-MM-DD`).          |
