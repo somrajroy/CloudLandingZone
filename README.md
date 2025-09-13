@@ -67,7 +67,7 @@ Below are enterprise-grade sample tags that you can leverage. If you use this di
 | **Tag Key**           | **Purpose**                  | **Why Mandatory (All CSPs)**                                                                                  |
 | --------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `env`                 | Environment / Lifecycle      | Critical for FinOps, security, and policy enforcement. Values: `dev`, `stage`, `prod`, `dr`. Required for core governance.                  |
-| `cost_center`         | Billing / FinOps             | Enables chargeback, budgets, FinOps reporting. Works in automation and aligns with enterprise finance models. |
+| `cost_center`         | Billing / FinOps             | Enables chargeback, budget alerts, FinOps reporting. Works in automation and aligns with enterprise finance models. Crucial for financial accountability & is the primary FinOps identifier for a business unit's spend.|
 | `owner_email`         | Identity / Ownership         | Accountability + automation (approvals, alerts). Replaces vague `Owner`.                                      |
 | `contact_email`       | Identity / Ownership         | Ops contact for support/escalation. Ensures clear operational responsibility.                                 |
 | `app_name`            | Billing / FinOps             | Unique app/service identifier (e.g., `energy_ai`). Helps cost attribution and monitoring.                     |
