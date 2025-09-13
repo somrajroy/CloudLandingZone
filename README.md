@@ -74,7 +74,7 @@ Below are enterprise-grade sample tags that you can leverage. If you use this di
 | `project_name`        | Billing / FinOps / Ownership | Logical grouping/team mapping. Can merge with `app_name` if same.                                             |
 | `data_classification` | Security & Compliance        | Defines data sensitivity (e.g., `public`, `confidential`, `pii`). Drives policies & compliance posture.       |
 
-<br/>
+
 #### Discretionary Tags (Recommended but Context-Dependent)
 
 | **Tag Key**       | **Purpose**                   | **Why Useful**                                                                                 |
