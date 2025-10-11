@@ -126,9 +126,7 @@ This checklist helps ensure all the essential aspects during landing zone setup 
 | **Cost Management**     | - Set budgets and alerts  <br> - Enable detailed billing  <br> - Tag resources for cost attribution  <br> - Use cost optimization recommendations     |
 
 
-<img width="596" height="521" alt="image" src="https://github.com/user-attachments/assets/295d29fd-7735-4fd5-b4bb-5af0db482d92" /> <br/>
- 
- # Cloud-Agnostic Landing Zone Checklist by Day 0 / Day 1 / Day 2
+# Cloud-Agnostic Landing Zone Checklist by Day 0 / Day 1 / Day 2
 You may leverage the below practical checklist to ensure your landing zone covers all the foundational elements — from identity to automation — regardless of the cloud provider.<br/>
 ### Day 0 – Planning & Design
 
