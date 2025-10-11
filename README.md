@@ -65,10 +65,9 @@ As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and 
    * In `multi-cloud designs`, always follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably.<br/>
 
 ### Cloud-Agnostic Tagging Matrix for Landing Zones
-
 Below are enterprise-grade sample tags (dictionary) that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof for AWS, GCP and Azure — meaning FinOps dashboards, IaC modules, and compliance policies will be portable across clouds. <br/>
 #### Mnadatory Tags (cross-cloud baseline) 
-These are essential for governance, FinOps, automation, and compliance. Minimum set for every resource: env, cost_center, owner_email.<br/>
+These are essential for governance, FinOps, automation, and compliance. <br/>
 
 
 | **Tag Key**           | **Purpose**                  | **Why Mandatory (All CSPs)**                                                                                  |
