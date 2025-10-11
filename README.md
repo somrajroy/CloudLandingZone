@@ -32,8 +32,15 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
-# Tagging : The Non-Negotiable Foundation of an Enterprise Landing Zone
+# Tagging standards and strategy
 `Tagging` is a crucial and top-priority component of a `Well-Architected enterprise-cloud landing zone`, regardless of the cloud provider (AWS, Azure, GCP). Tagging serves as a foundational mechanism for resource organization, governance, security enforcement, cost management, environment separation, automation, and compliance, which are core objectives of a landing zone. <br/>
+
+### CSP Tagging Constraints
+Tagging rules differ across CSPs, which often creates inconsistency in multi-cloud environments:
+   * AWS → Flexible: keys are [case-sensitive, allow spaces, mixed case, and special characters (but this flexibility causes inconsistency)](https://docs.aws.amazon.com/mediaconnect/latest/ug/tagging-restrictions.html). AWS also provides a sample [tagging dictionary based on recommended mandatory and discretionary tags](https://aws.amazon.com/solutions/guidance/tagging-on-aws/).
+   * Azure → More limits. [Keys are case-insensitive (values are case-sensitive), up to 512 chars, some symbols disallowed](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources).
+   * GCP → [Labels are the most restrictive](https://cloud.google.com/compute/docs/labeling-resources): lowercase only, numbers/underscores allowed, max 63 chars, must start with a letter.
+   * `Cross-cloud automation needs one rule` : Cross-cloud automation tools like Terraform, CI/CD pipelines, and governance engines require predictable, uniform tags to avoid failures or misclassification. This strategy prevents export issues, enables FinOps, and supports policy enforcement across all three CSPs.
 
 ### Tagging strategy : The Metadata Backbone of a Cloud Landing Zone
 As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and effective tagging standard should be applied which aligns with `FinOps principles` and the `Well-Architected Frameworks` of all three CSPs, ensuring scalable operations & automation across multiple environments and organizations. Below Cloud-agnostic tagging standard is universal, efficient, consistent, and automation-friendly and is fully resilient to provider-specific limitations or differences, thereby simplifying automation and preventing issues.
@@ -52,12 +59,6 @@ As Tagging is a foundational pillar of any cloud Landing Zone, an efficient and 
    * Example: `cost_center=finance_ops` works everywhere.
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
    * In `multi-cloud designs`, always follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably.<br/>
-### CSP Tagging Constraints (Why strict standards matter)
-Tagging rules differ across CSPs, which often creates inconsistency in multi-cloud environments:
-   * AWS → Flexible: keys are [case-sensitive, allow spaces, mixed case, and special characters (but this flexibility causes inconsistency)](https://docs.aws.amazon.com/mediaconnect/latest/ug/tagging-restrictions.html). AWS also provides a sample [tagging dictionary based on recommended mandatory and discretionary tags](https://aws.amazon.com/solutions/guidance/tagging-on-aws/).
-   * Azure → More limits. [Keys are case-insensitive (values are case-sensitive), up to 512 chars, some symbols disallowed](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources).
-   * GCP → [Labels are the most restrictive](https://cloud.google.com/compute/docs/labeling-resources): lowercase only, numbers/underscores allowed, max 63 chars, must start with a letter.
-   * `Cross-cloud automation needs one rule` : Cross-cloud automation tools like Terraform, CI/CD pipelines, and governance engines require predictable, uniform tags to avoid failures or misclassification. This strategy prevents export issues, enables FinOps, and supports policy enforcement across all three CSPs.
 
 ### Cloud-Agnostic Tagging Matrix for Landing Zones
 
