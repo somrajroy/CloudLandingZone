@@ -31,7 +31,7 @@ Below table summarizes the elements in each CSP's : <br/>
 # Tagging standards and strategy
 
 Tagging is a cornerstone of a cloud landing zone, enabling resource organization, cost management, governance, and automation across AWS, Azure, and GCP. A cloud-agnostic strategy uses `lowercase` `snake_case` `keys (e.g., cost_center_id, owner_email)` and `values (e.g., env=prod)`, limited to 63 characters, to meet GCP’s strict label constraints (lowercase, letters, numbers, underscores only, starting with a letter), while ensuring compatibility with AWS (128-char key limit, case-sensitive) and Azure (512-char key limit, case-insensitive keys). This `lowest common denominator` approach prevents export issues in tools like GCP BigQuery, AWS Cost Explorer, and Azure Cost Management, and supports cross-cloud automation (e.g., Terraform, CI/CD). Enforce tags using AWS Tag Policies, Azure Policy, or GCP Organization Policies. A 2022 CloudZero survey found that consistent tagging reduced cloud overspending by up to 20%, highlighting its value for `FinOps` and `Well-Architected principles`.
-### Universal Tagging strategy
+### Tagging strategy
  * Tagging rules differ across CSPs - This inconsistency makes cross-cloud automation fail unless a customer enforce common standards.
  * `Cross-cloud automation needs one rule` : Tools like Terraform, CI/CD pipelines, and governance engines require predictable, uniform tags to avoid failures or misclassification. 
  * Follow the universal (`all lowercase' 'snake_case`) tagging standard to ensure compatibility across CSP's without any transformation. 
@@ -48,8 +48,8 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
    * In `multi-cloud designs`, follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably.
 
-### Cloud-Agnostic Tagging Matrix for Landing Zones
-Below are enterprise-grade sample tags (dictionary) that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof. <br/>
+### Cloud-Agnostic Tag Dictionary for Landing Zones
+Below are enterprise-grade sample tags (dictionary) that you can leverage. If this dictionary as taken as baseline in a Landing Zone, then automatically it will be future-proof. <br/>
 #### Mandatory Tags (Cross-Cloud Baseline)
 These are essential for governance, FinOps, automation, and compliance. <br/>
 
