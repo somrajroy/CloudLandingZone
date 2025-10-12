@@ -111,15 +111,15 @@ This checklist helps ensure all the essential aspects during landing zone setup 
 | **Cost Management**     | - Set budgets and alerts  <br> - Enable detailed billing  <br> - Tag resources for cost attribution  <br> - Use cost optimization recommendations     |
 
 # Landing Zone Lifecycle
-A landing zone isn’t a one-time setup - it zone evolves through four phases. This iterative lifecycle, with regular checks for new technologies or requirements, ensures a future-proof foundation and supportive of long-term business goals. <br/> 
+A landing zone isn’t a one-time setup - it zone evolves through four phases. This iterative lifecycle, with regular checks for new technologies or requirements, ensures a future-proof foundation and supportive of long-term business goals. This lifecycle view is consistent with leading industry frameworks used by hyperscalers and cloud governance platforms. <br/> 
    1) Day 0 - Plan and Design (define requirements and architecture)
    2) Day 1 - Build and Deploy (implement IAM, networking, and automation)
    3) Day 2 - Operate and Optimize (monitor and refine)
    4) Evolve and Expand (adapt to new needs or clouds)
 
 
-# Cloud-Agnostic Landing Zone Checklist by Day 0 / Day 1 / Day 2
-You may leverage the below practical checklist to ensure your landing zone covers all the foundational elements — from identity to automation — regardless of the cloud provider.<br/>
+# Landing Zone Checklist by Day 0 / Day 1 / Day 2
+Leverage this practical checklist to ensure the landing zone covers all foundational elements — from identity to automation — across AWS, Azure, and GCP. Use the “lowest common denominator” principle (e.g., `lowercase` `snake_case` for tags) to ensure compatibility and reliability in multi-cloud environments. <br/>
 ### Day 0 – Planning & Design
 
 | **Category**              | **Key Activities**                                                                                                                                              |
@@ -154,7 +154,17 @@ You may leverage the below practical checklist to ensure your landing zone cover
 | **Automation & IaC**      | - Improve reusability of modules  <br> - Extend CI/CD to include drift detection  <br> - Add guardrails and pre-commit hooks |
 | **Cost Management**       | - Use cost reports for optimization  <br> - Apply right-sizing recommendations  <br> - Review chargeback reports             |
 
+### Continuous Evolution – Evolve and Expand
 
+| **Category**              | **Key Activities**                                                                                                           |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Identity & Access**     | - Update IAM policies for new services or compliance needs  <br> - Expand SSO to additional clouds                           |
+| **Resource Organization** | - Refactor/optimize structure as needed  <br> - Review tagging consistency & Update tagging standards (e.g., new  tags)      |
+| **Networking**            | - Monitor network traffic and integrate new regions/cloud as needed  <br> - Fine-tune and/or adopt new connectivity solutions|
+| **Security & Compliance** | - Run periodic vulnerability scans and patching  <br> - Conduct compliance audits & reporting. Deploy updated security tools |
+| **Monitoring & Logging**  | - Refine dashboards and alerts  <br> - Integrate logs with SIEM  <br> - Optimize log retention and storage costs, multi-cloud|
+| **Automation & IaC**      | - Improve reusability of modules  <br> - Extend CI/CD to include drift detection  <br> - Add guardrails and pre-commit hooks |
+| **Cost Management**       | - Use cost reports for optimization  <br> - Apply right-sizing recommendations  <br> - Review chargeback reports             |
 
 
 
