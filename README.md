@@ -1,13 +1,13 @@
 # CloudLandingZone
-A `Cloud Landing Zone` is the ready-to-use foundation in the cloud where customers can safely, securely, and efficiently deploy workloads. It is a pre-configured Cloud Environment within a cloud provider (like AWS, Azure, or GCP)  that that acts as a foundation for deploying applications and workloads.  It establishes `guardrails, governance, automation and infrastructure` allowing teams to deploy workloads securely & efficiently from Day-1. Think of it like setting up a robust base camp before starting to build houses in a new territory. It's not just a single server or a VPC; it’s a collection of pre-configured services, policies, controls, and automated provisioning that ensures everything built on top is secure, compliant, cost-effective, and scalable. <br/>
+A `Cloud Landing Zone` is the ready-to-use foundation in the cloud where customers can safely, securely, and efficiently deploy workloads. It is a pre-configured Cloud Environment within a cloud provider (like AWS, Azure, or GCP)  that that acts as a foundation for deploying applications and workloads.  It establishes `guardrails, governance, automation and infrastructure` allowing teams to deploy workloads securely & efficiently from Day-1. It's not just a single server or a VPC; it’s a collection of pre-configured services, policies, controls, and automated provisioning that ensures everything built on top is secure, compliant, cost-effective, and scalable. <br/>
 
-🔍 Another analogy : it’s like setting up a new office building before the teams move in. You wouldn’t just put up a sign and open the doors — you’d set up : <br/>
-- 🛡️ Security (Access Control): Locks, access cards, cameras.
-- 🌐 Utilities (Networking): Electricity, plumbing, internet.
-- 🗂️ Departments (Resource Hierarchy): Dedicated spaces for teams.
-- 📜 Rules & Regulations (Policies): Fire exits, safety codes.
-- 📈 Monitoring (Logging): Utility meters tracking usage.
-- 🤖 Automation (IaC - Provisioning & Management): Pre-wired systems for consistency. <br/><br/>
+It’s like setting up a new office building before the teams/people move in. You wouldn’t just put up a sign and open the doors — you’d set up : <br/>
+- Security (Access Control): Locks, access cards, cameras.
+-  Utilities (Networking): Electricity, plumbing, internet.
+-  Departments (Resource Hierarchy): Dedicated spaces for teams.
+-  Rules & Regulations (Policies): Fire exits, safety codes.
+-  Monitoring (Logging): Utility meters tracking usage.
+-  Automation (IaC - Provisioning & Management): Pre-wired systems for consistency. <br/><br/>
 
 A `Cloud Landing Zone` provides the digital equivalent of this foundational setup, enabling efficient, secure, and automated cloud adoption at scale. Automation ensures that every environment — whether for dev, staging, or production — is built and governed in a repeatable, scalable, and secure way.<br/>
 ### Why It Matters
