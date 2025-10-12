@@ -37,6 +37,7 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
  * Follow the universal (`all lowercase' 'snake_case`) tagging standard to ensure compatibility across CSP's without any transformation. 
     * `all lowercase`  
     * `snake_case (no spaces, no hyphens, no uppercase except for IDs/emails where case sensitivity is required)`
+    *  `Length` : Keys limited to 63 characters (to be GCP-safe).
     * This makes tagging portable and automation-friendly across AWS, Azure, and GCP & works natively everywhere without modification.
  * `Snake Case` is an industry standard naming convention where :
     * All letters are lowercase.<br/>
