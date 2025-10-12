@@ -33,7 +33,7 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
  * `Lowest common denominator = universal and reliability`: Since GCP is the strictest, if customers design their enterprise tag policy as `all lowercase & snake_case`, those tags will work without modification in AWS and Azure too. AWS and Azure are more permissive, but benefits immensely from consistent formatting for automation and reporting based on my experience.
    * Example: `cost_center=finance_ops` works everywhere.
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
-   * In `multi-cloud designs`, always follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably.<br/>
+   * In multi-cloud designs, follow the lowest common denominator principle — if it works in the strictest cloud, it will work everywhere reliably.
 
 ### CSP Tagging Constraints
 Tagging rules differ across CSPs- This inconsistency makes cross-cloud automation fail unless you enforce common standards:
