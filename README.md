@@ -15,6 +15,19 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
+# Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
+Below table summarizes the elements in each CSP's : <br/>
+
+| **Core Element**          | **AWS**                                                               | **Azure**                                                            | **GCP**                                                               |
+| ------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| **Identity & Access**     | IAM users, roles, policies, SSO via IAM Identity Center (ex SSO), MFA | Azure AD (Entra ID), RBAC, Conditional Access, MFA                   | Cloud IAM, Google Workspace federation, SSO, MFA                      |
+| **Resource Organization** | Organizations → OUs → Accounts                                        | Management Groups → Subscriptions → Resource Groups                  | Organization → Folders → Projects                                     |
+| **Networking**            | VPCs, Subnets, Route Tables, NACLs, Security Groups, Transit Gateway  | VNets, Subnets, NSGs, Route Tables, ExpressRoute, Azure Firewall     | VPCs, Subnets, Firewall Rules, Routes, Shared VPC, Cloud NAT          |
+| **Security & Compliance** | AWS Config, SCPs, GuardDuty, Macie, KMS, IAM Access Analyzer          | Defender for Cloud, Policies, Blueprints, Key Vault, Security Center | Security Command Center, Org Policies, Cloud KMS, Forseti (community) |
+| **Monitoring & Logging**  | CloudWatch, CloudTrail, X-Ray, AWS Config                             | Azure Monitor, Log Analytics, Activity Logs                          | Cloud Logging, Cloud Monitoring, Audit Logs, Error Reporting          |
+| **Automation & IaC**      | CloudFormation, Terraform, CDK, Control Tower                         | Bicep, ARM Templates, Terraform, Landing Zone Accelerator            | Terraform, Deployment Manager (legacy), GitOps (Config Connector)     |
+| **Cost Management**       | AWS Budgets, Cost Explorer, Cost Categories                           | Cost Management + Billing, Budgets, Advisor                          | Cloud Billing Reports, Budgets, Recommender, FinOps tools             | <br/><br/>
+
 # Tagging standards and strategy
 
 Tagging is a cornerstone of a cloud landing zone, enabling resource organization, cost management, governance, and automation across AWS, Azure, and GCP. A cloud-agnostic strategy uses `lowercase` `snake_case` `keys (e.g., cost_center_id, owner_email)` and `values (e.g., env=prod)`, limited to 63 characters, to meet GCP’s strict label constraints (lowercase, letters, numbers, underscores only, starting with a letter), while ensuring compatibility with AWS (128-char key limit, case-sensitive) and Azure (512-char key limit, case-insensitive keys). This `lowest common denominator` approach prevents export issues in tools like GCP BigQuery, AWS Cost Explorer, and Azure Cost Management, and supports cross-cloud automation (e.g., Terraform, CI/CD). Enforce tags using AWS Tag Policies, Azure Policy, or GCP Organization Policies. A 2022 CloudZero survey found that consistent tagging reduced cloud overspending by up to 20%, highlighting its value for `FinOps` and `Well-Architected principles`.
@@ -67,20 +80,6 @@ These tags are not mandatory, but they improve cost allocation, billing insights
 | `region`          | Environment / Lifecycle       | For multi-region governance, policy enforcement.                                               |
 | `managed_by`      | Operations / Automation       | Identifies provisioning method (`terraform`, `manual`, `ansible`). Helps IaC drift management/scope. |
 | `support_tier`    | Operations / SLA              | SLA or support level mapping (e.g., gold, silver). Can be useful for support prioritization or tailored monitoring.                                                       |
-
-
-# Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
-Below table summarizes the elements in each CSP's : <br/>
-
-| **Core Element**          | **AWS**                                                               | **Azure**                                                            | **GCP**                                                               |
-| ------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| **Identity & Access**     | IAM users, roles, policies, SSO via IAM Identity Center (ex SSO), MFA | Azure AD (Entra ID), RBAC, Conditional Access, MFA                   | Cloud IAM, Google Workspace federation, SSO, MFA                      |
-| **Resource Organization** | Organizations → OUs → Accounts                                        | Management Groups → Subscriptions → Resource Groups                  | Organization → Folders → Projects                                     |
-| **Networking**            | VPCs, Subnets, Route Tables, NACLs, Security Groups, Transit Gateway  | VNets, Subnets, NSGs, Route Tables, ExpressRoute, Azure Firewall     | VPCs, Subnets, Firewall Rules, Routes, Shared VPC, Cloud NAT          |
-| **Security & Compliance** | AWS Config, SCPs, GuardDuty, Macie, KMS, IAM Access Analyzer          | Defender for Cloud, Policies, Blueprints, Key Vault, Security Center | Security Command Center, Org Policies, Cloud KMS, Forseti (community) |
-| **Monitoring & Logging**  | CloudWatch, CloudTrail, X-Ray, AWS Config                             | Azure Monitor, Log Analytics, Activity Logs                          | Cloud Logging, Cloud Monitoring, Audit Logs, Error Reporting          |
-| **Automation & IaC**      | CloudFormation, Terraform, CDK, Control Tower                         | Bicep, ARM Templates, Terraform, Landing Zone Accelerator            | Terraform, Deployment Manager (legacy), GitOps (Config Connector)     |
-| **Cost Management**       | AWS Budgets, Cost Explorer, Cost Categories                           | Cost Management + Billing, Budgets, Advisor                          | Cloud Billing Reports, Budgets, Recommender, FinOps tools             | <br/><br/>
 
 # Landing Zone Checklist (Cloud-Agnostic)
 
