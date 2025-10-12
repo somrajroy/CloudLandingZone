@@ -115,8 +115,9 @@ A landing zone isn’t a one-time setup - it zone evolves through four phases. T
    1) Day 0 - Plan and Design (define requirements and architecture)
    2) Day 1 - Build and Deploy (implement IAM, networking, and automation)
    3) Day 2 - Operate and Optimize (monitor and refine)
-   4) Evolve and Expand (adapt to new needs or clouds)
+   4) Evolve and Expand (adapt to new needs or clouds) <br/>
 
+   <img width="341" height="652" alt="image" src="https://github.com/user-attachments/assets/4b8e6b35-e0c7-4b78-a301-f1eee575e5c4" />
 
 # Landing Zone Checklist by Day 0 / Day 1 / Day 2
 Leverage this practical checklist to ensure the landing zone covers all foundational elements — from identity to automation — across AWS, Azure, and GCP. Use the “lowest common denominator” principle (e.g., `lowercase` `snake_case` for tags) to ensure compatibility and reliability in multi-cloud environments. <br/>
