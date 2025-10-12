@@ -83,7 +83,7 @@ These tags are not mandatory, but they improve cost allocation, billing insights
 
 # Landing Zone Checklist (Cloud-Agnostic)
 
-This checklist helps ensure all the essential aspects during landing zone setup are covered : <br/>
+This checklist helps ensure all the essential aspects during landing zone setup are covered. Refer this as a baseline validation guide before deployment. <br/>
 
 
 | **Category**            | **Key Activities**                                                                                                                                     |
