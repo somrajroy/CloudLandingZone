@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="diagram_1" name="Cloud Landing Zone Lifecycle">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- Start Node -->
+        <mxCell id="2" value="Start: Cloud Landing Zone Lifecycle" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <!-- Phase 1: Plan and Design -->
+        <mxCell id="3" value="Phase 1: Plan and Design&lt;br&gt;Define requirements, architecture, governance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="120" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Phase 2: Build and Deploy -->
+        <mxCell id="4" value="Phase 2: Build and Deploy&lt;br&gt;Set up IAM, networking, security, automation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="210" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Phase 3: Operate and Optimize -->
+        <mxCell id="5" value="Phase 3: Operate and Optimize&lt;br&gt;Monitor, manage costs, update configurations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9e1f2;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Phase 4: Evolve and Expand -->
+        <mxCell id="6" value="Phase 4: Evolve and Expand&lt;br&gt;Incorporate new features, multi-cloud, compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f4cccc;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="390" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Decision Node: Check for Updates -->
+        <mxCell id="7" value="Check for Updates&lt;br&gt;New needs or technologies?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fce5cd;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="480" width="150" height="60" as="geometry"/>
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Loop back to Evolve and Expand -->
+        <mxCell id="13" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="7" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="435" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- Loop back to Operate and Optimize -->
+        <mxCell id="14" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="7" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="330" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
