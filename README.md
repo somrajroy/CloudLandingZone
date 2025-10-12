@@ -8,7 +8,7 @@ It’s like setting up a new office building before the teams/people move in. Yo
 -  Departments (Resource Hierarchy): Dedicated spaces for teams.
 -  Rules & Regulations (Policies): Fire exits, safety codes.
 -  Monitoring (Logging): Utility meters tracking usage.
--  Automation (IaC - Provisioning & Management): Pre-wired systems for consistency. <br/><br/>
+-  Automation (IaC - Provisioning & Management): Pre-wired systems for consistency. <br/>
 
 A `Cloud Landing Zone` provides the digital equivalent of this foundational setup, enabling efficient, secure, and automated cloud adoption at scale. Automation ensures that every environment — whether for dev, staging, or production — is built and governed in a repeatable, scalable, and secure way.<br/>
 
