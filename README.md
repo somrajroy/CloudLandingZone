@@ -49,7 +49,7 @@ Tagging rules differ across CSPs- This inconsistency makes cross-cloud automatio
      * GCP: Key ≤ 63 chars, lowercase letters, numbers, underscores, dashes; must start with a letter.
 
 ### Cloud-Agnostic Tagging Matrix for Landing Zones
-Below are enterprise-grade sample tags (dictionary) that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof for AWS, GCP and Azure — meaning FinOps dashboards, IaC modules, and compliance policies will be portable across clouds. <br/>
+Below are enterprise-grade sample tags (dictionary) that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof. <br/>
 #### Mnadatory Tags (cross-cloud baseline) 
 These are essential for governance, FinOps, automation, and compliance. <br/>
 
