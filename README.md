@@ -97,7 +97,7 @@ This checklist helps ensure all the essential aspects during landing zone setup 
 | **Cost Management**     | - Set budgets and alerts  <br> - Enable detailed billing  <br> - Tag resources for cost attribution  <br> - Use cost optimization recommendations     |
 
 # Landing Zone Lifecycle
-A landing zone isn’t a one-time setup - it zone evolves through four phases. This iterative lifecycle, with regular checks for new technologies or requirements, ensures a future-proof foundation and supportive of long-term business goals. This lifecycle view is consistent with leading industry frameworks used by hyperscalers and cloud governance platforms. <br/> 
+A landing zone isn’t a one-time setup - it evolves through four phases. This iterative lifecycle, with regular checks for new technologies or requirements, ensures a future-proof foundation and supportive of long-term business goals. This lifecycle view is consistent with leading industry frameworks used by hyperscalers and cloud governance platforms. <br/> 
    1) `Planning & Design (Day 0)` - `Architectural blueprint stage`. Define the non-negotiable standards: governance, security policies, resource hierarchy, and network topology.
    2) `Implementation & Deployment (Day 1)` - `Implementation stage`. Automate the creation of the foundational environment using Infrastructure-as-Code (IaC).
    3) `Operations & Optimization (Day 2)` - `Run stage`. Focus is on routine tasks like monitoring, managing security posture, cost management, and ensuring the environment runs smoothly and efficiently.
