@@ -12,13 +12,6 @@ It’s like setting up a new office building before the teams/people move in. Yo
 
 A `Cloud Landing Zone` provides the digital equivalent of this foundational setup, enabling efficient, secure, and automated cloud adoption at scale. Automation ensures that every environment — whether for dev, staging, or production — is built and governed in a repeatable, scalable, and secure way.<br/>
 
-### Why It Matters
-A well-designed landing zone:<br/>
- * Enables secure, scalable growth. <br/>
- * Ensures compliance from Day 1. <br/>
- * Makes cloud adoption faster for app/data/ML teams. <br/>
- * Keeps costs, access, and risks under control. <br/>
-
 While the specific services, naming conventions, and implementation details differ across CSP's, the fundamental purpose and architectural principles of a cloud landing zone remain consistent: to deliver a secure, compliant, scalable, and well-governed foundation that accelerates cloud adoption and supports diverse workloads.  <br/>
 
 # Cloud-Agnostic Core Elements of a Landing Zone
