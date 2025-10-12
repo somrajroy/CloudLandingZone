@@ -37,7 +37,7 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
 
 ### Cloud-Agnostic Tagging Matrix for Landing Zones
 Below are enterprise-grade sample tags (dictionary) that you can leverage. If you use this dictionary as a baseline in your Landing Zone, you’ll automatically be future-proof. <br/>
-#### Mnadatory Tags (cross-cloud baseline) 
+#### Mandatory Tags (Cross-Cloud Baseline)
 These are essential for governance, FinOps, automation, and compliance. <br/>
 
 
