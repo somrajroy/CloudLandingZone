@@ -112,10 +112,10 @@ This checklist helps ensure all the essential aspects during landing zone setup 
 
 # Landing Zone Lifecycle
 A landing zone isn’t a one-time setup - it zone evolves through four phases. This iterative lifecycle, with regular checks for new technologies or requirements, ensures a future-proof foundation and supportive of long-term business goals. This lifecycle view is consistent with leading industry frameworks used by hyperscalers and cloud governance platforms. <br/> 
-   1) Day 0 - Plan and Design (define requirements and architecture)
-   2) Day 1 - Build and Deploy (implement IAM, networking, and automation)
-   3) Day 2 - Operate and Optimize (monitor and refine)
-   4) Evolve and Expand (adapt to new needs or clouds) <br/>
+   1) Day 0 - This is the architectural blueprint stage. You define the non-negotiable standards: governance, security policies, resource hierarchy, and network topology.
+   2) Day 1 - This is the implementation stage. You use automation (IaC) to create the defined structure, configuring core services like IAM, networking, logging, and foundational security controls.
+   3) Day 2 - This is the run stage. Focus is on routine tasks like monitoring, managing security posture, cost management, and ensuring the environment runs smoothly and efficiently.
+   4) Evolve and Expand : This is the improvement stage. This phase is strategic, focusing on adapting the core landing zone to new business needs, adopting new cloud features, expanding to multi-cloud, or aligning with updated compliance mandates. The decision node here (Check for Updates) is the feedback loop that sends requirements back to the Plan and Design phase (or back to Evolve) to restart the cycle, ensuring the zone never becomes obsolete. <br/>
 
    <img width="341" height="652" alt="image" src="https://github.com/user-attachments/assets/4b8e6b35-e0c7-4b78-a301-f1eee575e5c4" />
 
