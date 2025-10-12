@@ -6,7 +6,7 @@ A `Cloud Landing Zone` is like building a fully equipped office before inviting 
 
 While the specific services, naming conventions, and implementation details differ across CSP's, the fundamental purpose and architectural principles of a cloud landing zone remain consistent: to deliver a secure, compliant, scalable, and well-governed foundation that accelerates cloud adoption and supports diverse workloads.  <br/>
 
-# Cloud-Agnostic Core Elements of a Landing Zone
+# Core Elements of a Landing Zone
 These foundational elements apply across all major cloud providers — AWS, Azure, and GCP — ensuring secure, scalable, and consistent cloud adoption: <br/>
 
 | **Core Element**          | **Description**                                                                                               |
