@@ -172,3 +172,5 @@ Below are some additional resources and references for further learning: <br/>
 4. [Cloud Landing Zone Lifecycle explained](https://www.meshcloud.io/en/blog/cloud-landing-zone-lifecycle-explained/)<br/>
 5. [What is a Cloud Landing Zone?](https://www.appvia.io/blog/what-is-a-cloud-landing-zone)<br/>
 6. [How to Use Tags in Terraform? [Overview & Examples]](https://spacelift.io/blog/terraform-tags)<br/>
+7. [Best Practices for Tagging AWS Resources](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html)<br/>
+8. [The Complete Azure Tagging Guide](https://www.cloudzero.com/blog/azure-tagging-guide/)<br/>
