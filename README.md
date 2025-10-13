@@ -55,7 +55,10 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
  * `Lowest common denominator = universal and reliability`: Since GCP is the strictest, if customers design their enterprise tag policy as `all lowercase & snake_case`, those tags will work without modification in AWS and Azure too.
    * Example: `cost_center=finance_ops` works everywhere.
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
-   * In `multi-cloud designs`, follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably.
+   * In `multi-cloud designs`, follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably. <br/>
+
+<img width="769" height="555" alt="image" src="https://github.com/user-attachments/assets/e6f90309-cb34-42d4-8db7-225856ac9646" />
+
 
 ### Tag Dictionary for Landing Zones (Universal Tag Dictionary & Governance)
 Below are enterprise-grade sample tags (dictionary) that you can leverage. Use this dictionary as a baseline for enterprise-grade tagging across all CSPs. If this dictionary as taken as baseline in a Landing Zone, then automatically it will be future-proof. <br/>
