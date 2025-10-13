@@ -23,9 +23,7 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend        |
 
 <br/>Fundamental components forming a secure, scalable, and governed Cloud Landing Zone applicable across AWS, Azure, and GCP for Governance and Scale.<br/><br/>
-<img width="938" height="447" alt="image" src="https://github.com/user-attachments/assets/4430541b-d13e-4ac7-bf19-9f2728f70e94" />
-
-
+<img width="935" height="450" alt="image" src="https://github.com/user-attachments/assets/95b6b8df-de5e-4cd8-ab25-45ee5245eeb4" /> <br/>
 
 # Cross-Cloud Service Mapping (AWS vs Azure vs GCP)
 Below table summarizes the elements in each CSP's. This mapping helps teams translate universal Landing Zone principles into provider-specific implementations. : <br/>
