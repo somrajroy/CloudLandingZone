@@ -31,13 +31,15 @@ Below table summarizes the elements in each CSP's : <br/>
 # Tagging standards and strategy
 
 Tagging is a cornerstone of a cloud landing zone, enabling resource organization, cost management, governance, and automation across AWS, Azure, and GCP. A cloud-agnostic strategy uses `lowercase` `snake_case` `keys (e.g., cost_center_id, owner_email)` and `values (e.g., env=prod)`, limited to 63 characters, to meet GCP’s strict label constraints (lowercase, letters, numbers, underscores only, starting with a letter), while ensuring compatibility with AWS (128-char key limit, case-sensitive) and Azure (512-char key limit, case-insensitive keys). A 2022 CloudZero survey found that consistent tagging reduced cloud overspending by 20%, highlighting its value for `FinOps` and `Well-Architected principles`.
-### Tagging strategy
+### Universal Tagging Strategy Summary
  * Tagging rules differ across CSPs - This inconsistency makes cross-cloud automation fail unless a customer enforce common standards.
  * `Cross-cloud automation needs one rule` : Tools like Terraform, CI/CD pipelines, and governance engines require predictable, uniform tags to avoid failures or misclassification. 
  * Follow the universal (`all lowercase' 'snake_case`) tagging standard to ensure compatibility across CSP's without any transformation. 
     * `all lowercase`  
-    * `snake_case (no spaces, no hyphens, no uppercase except for IDs/emails where case sensitivity is required)`
+    *  Format: All `lowercase` + `snake_case (e.g., app_name=energy_ai)`.
+    *  Characters: Only letters, numbers, and underscores (_). Avoid spaces, hyphens, and special characters (except for IDs/emails where case sensitivity is required).
     *  `Length` : Keys limited to 63 characters (to be GCP-safe).
+    *  `Enforcement`: Use cloud-native policy tools (AWS Tag Policies, Azure Policy, GCP Organization Policies). 
     * This makes tagging portable and automation-friendly across AWS, Azure, and GCP & works natively everywhere without modification.
  * `Snake Case` is an industry standard naming convention where :
     * All letters are lowercase.<br/>
@@ -52,7 +54,7 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
 ### Cloud-Agnostic Tag Dictionary for Landing Zones
 Below are enterprise-grade sample tags (dictionary) that you can leverage. If this dictionary as taken as baseline in a Landing Zone, then automatically it will be future-proof. <br/>
 #### Mandatory Tags (Cross-Cloud Baseline)
-These are essential for governance, FinOps, automation, and compliance. <br/>
+These are essential FinOps and Governance tags that should be applied to all resources for financial accountability, security, and automation.  <br/>
 
 
 | **Tag Key**           | **Purpose**                  | **Why Mandatory (All CSPs)**                                                                                  |
@@ -67,7 +69,7 @@ These are essential for governance, FinOps, automation, and compliance. <br/>
 
 
 #### Discretionary Tags (Recommended but Context-Dependent)
-These tags are not mandatory, but they improve cost allocation, billing insights, or environment-level governance: Leverage these tags based on project complexity, compliance needs, or multi-cloud requirements. There can be other tags too (e.g. `automation_flag`, `dr_tier` etc.) <br/>
+These tags are not mandatory, but they improve cost allocation, billing insights, or environment-level governance: Leverage these tags based on project complexity, compliance needs, automation or multi-cloud requirements. There can be other tags too (e.g. `automation_flag`, `dr_tier` etc.) <br/>
 
 | **Tag Key**       | **Purpose**                   | **Why Useful**                                                                                 |
 | ----------------- | ----------------------------- | ---------------------------------------------------------------------------------------------- |
