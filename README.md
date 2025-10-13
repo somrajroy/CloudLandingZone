@@ -171,3 +171,4 @@ Below are some additional resources and references for further learning: <br/>
 3. [What are Day-0, Day-1, and Day-2 Operations?](https://spacelift.io/blog/day-0-day-1-day-2-operations)<br/>
 4. [Cloud Landing Zone Lifecycle explained](https://www.meshcloud.io/en/blog/cloud-landing-zone-lifecycle-explained/)<br/>
 5. [What is a Cloud Landing Zone?](https://www.appvia.io/blog/what-is-a-cloud-landing-zone)<br/>
+6. [How to Use Tags in Terraform? [Overview & Examples]](https://spacelift.io/blog/terraform-tags)<br/>
