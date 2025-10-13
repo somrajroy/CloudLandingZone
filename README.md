@@ -23,7 +23,7 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
 # Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
-Below table summarizes the elements in each CSP's : <br/>
+Below table summarizes the elements in each CSP's. This mapping helps teams translate universal Landing Zone principles into provider-specific implementations. : <br/>
 
 | **Core Element**          | **AWS**                                                               | **Azure**                                                            | **GCP**                                                               |
 | ------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
@@ -45,7 +45,7 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
     *  Format: `all lowercase` + `snake_case` (e.g., `app_name=energy_ai`).
     *  `Characters`: Only `letters`, `numbers`, and `underscores (_)`. Avoid spaces, hyphens, and special characters (except for IDs/emails where case sensitivity is required).
     *  `Length` : Keys limited to 63 characters (to be GCP-safe).
-    *  `Enforcement`: Use cloud-native policy tools (AWS Tag Policies, Azure Policy, GCP Organization Policies). 
+    *  `Enforcement (Tag Enforcement Tools)`: Use cloud-native policy tools (AWS Tag Policies, Azure Policy, GCP Organization Policies). 
     * This makes tagging portable and automation-friendly across AWS, Azure, and GCP & works natively everywhere without modification.
  * `Snake Case` is an industry standard naming convention where :
     * All letters are lowercase.<br/>
@@ -57,8 +57,8 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
    * In `multi-cloud designs`, follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably.
 
-### Cloud-Agnostic Tag Dictionary for Landing Zones
-Below are enterprise-grade sample tags (dictionary) that you can leverage. If this dictionary as taken as baseline in a Landing Zone, then automatically it will be future-proof. <br/>
+### Tag Dictionary for Landing Zones (Universal Tag Dictionary & Governance)
+Below are enterprise-grade sample tags (dictionary) that you can leverage. Use this dictionary as a baseline for enterprise-grade tagging across all CSPs. If this dictionary as taken as baseline in a Landing Zone, then automatically it will be future-proof. <br/>
 #### Mandatory Tags (Cross-Cloud Baseline)
 These are essential FinOps and Governance tags that should be applied to all resources for financial accountability, security, and automation.  <br/>
 
@@ -92,7 +92,7 @@ These tags are not mandatory, but they improve cost allocation, billing insights
 
 # Landing Zone Checklist (Cloud-Agnostic)
 
-This checklist helps ensure all the essential aspects during landing zone setup are covered. Refer this as a baseline validation guide before deployment. <br/>
+This (Cloud agnostic) checklist helps ensure all the essential aspects during landing zone setup are covered. Refer this as a baseline validation guide before deployment. <br/>
 
 
 | **Category**            | **Key Activities**                                                                                                                                     |
@@ -105,7 +105,7 @@ This checklist helps ensure all the essential aspects during landing zone setup 
 | **Automation & IaC**    | - Use Terraform/Bicep/CloudFormation  <br> - Version control (e.g., Git)  <br> - CI/CD for provisioning  <br> - Policy-as-Code (OPA, Sentinel)       |
 | **Cost Management**     | - Set budgets and alerts  <br> - Enable detailed billing  <br> - Tag resources for cost attribution  <br> - Use cost optimization recommendations     |
 
-# Landing Zone Lifecycle
+# Landing Zone Lifecycle: Plan -> Deploy -> Operate -> Evolve
 A landing zone isn’t a one-time setup - it evolves through four phases. This iterative lifecycle, with regular checks for new technologies or requirements, ensures a future-proof foundation and supportive of long-term business goals. This lifecycle view is consistent with leading industry frameworks used by hyperscalers and cloud governance platforms. <br/> 
    1) `Planning & Design (Day 0)` - `Architectural blueprint stage`. Define the non-negotiable standards: governance, security policies, resource hierarchy, and network topology.
    2) `Implementation & Deployment (Day 1)` - `Implementation stage`. Automate the creation of the foundational environment using Infrastructure-as-Code (IaC).
@@ -115,7 +115,7 @@ A landing zone isn’t a one-time setup - it evolves through four phases. This i
    <img width="341" height="652" alt="image" src="https://github.com/user-attachments/assets/4b8e6b35-e0c7-4b78-a301-f1eee575e5c4" />
 
 # Landing Zone Checklist by Day 0 / Day 1 / Day 2
-Leverage this practical checklist to ensure the landing zone covers all foundational elements — from identity to automation — across AWS, Azure, and GCP. Use the “lowest common denominator” principle (e.g., `lowercase` `snake_case` for tags) to ensure compatibility and reliability in multi-cloud environments. <br/>
+Leverage this phased checklist to ensure completeness across planning, deployment, and operations — from identity to automation — across AWS, Azure, and GCP. Use the “lowest common denominator” principle (e.g., `lowercase` `snake_case` for tags) to ensure compatibility and reliability in multi-cloud environments. <br/>
 ### Day 0 – Planning & Design
 
 | **Category**              | **Key Activities**                                                                                                                                              |
