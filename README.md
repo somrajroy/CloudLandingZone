@@ -36,7 +36,7 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
  * `Cross-cloud automation needs one rule` : Tools like Terraform, CI/CD pipelines, and governance engines require predictable, uniform tags to avoid failures or misclassification. 
  * Follow the universal (`all lowercase' 'snake_case`) tagging standard to ensure compatibility across CSP's without any transformation. 
     *  Format: `all lowercase` + `snake_case` (e.g., `app_name=energy_ai`).
-    *  Characters: Only letters, numbers, and underscores (_). Avoid spaces, hyphens, and special characters (except for IDs/emails where case sensitivity is required).
+    *  `Characters`: Only `letters`, `numbers`, and `underscores (_)`. Avoid `spaces`, `uppercase`, `hyphens`, and `special characters` (except for IDs/emails where case sensitivity is required).
     *  `Length` : Keys limited to 63 characters (to be GCP-safe).
     *  `Enforcement`: Use cloud-native policy tools (AWS Tag Policies, Azure Policy, GCP Organization Policies). 
     * This makes tagging portable and automation-friendly across AWS, Azure, and GCP & works natively everywhere without modification.
