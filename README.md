@@ -6,7 +6,7 @@ This guide is for Cloud Architects, FinOps Practitioners, Cloud Engineers, and E
 By applying this guidance, you will be able to:
    * `Accelerate Onboarding`: Provide application teams with a secure environment faster, reducing time-to-market.
    * `Ensure Compliance by Design`: Embed security and governance policies automatically, avoiding costly retrofits later.
-   * `Apply Multi-Cloud Consistency`: Implement standards (like the universal tagging strategy) that work across AWS, Azure, and GCP, reducing operational complexity.
+   * `Apply Multi-Cloud Consistency`: Use cloud-agnostic standards — from tagging and naming conventions to IAM, networking, and automation — that work across AWS, Azure, and GCP to reduce operational complexity.
    * `Achieve Financial Accountability (FinOps)`: Gain the granular data needed to track, optimize, and charge back cloud costs accurately.
    * `Build a Universal, Future-Proof Foundation`: Apply principles that align with Well-Architected frameworks on any public cloud platform, ensuring your environment is scalable and reliable regardless of provider.
 # Core Elements of a Landing Zone
