@@ -20,8 +20,9 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Security & Compliance** | Guardrails like **encryption, policies, vulnerability scanning**, and audit readiness (CIS, ISO, NIST)        |
 | **Monitoring & Logging**  | Centralized **logging, metrics, alerts**, and **audit trails** to support visibility and incident response    |
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
-| **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
+| **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend        |
 
+<br/>Fundamental components forming a secure, scalable, and governed Cloud Landing Zone applicable across AWS, Azure, and GCP.<br/>
 <img width="938" height="447" alt="image" src="https://github.com/user-attachments/assets/4430541b-d13e-4ac7-bf19-9f2728f70e94" />
 
 
