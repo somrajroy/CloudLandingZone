@@ -1,4 +1,4 @@
-# Enterprise Guide to Cloud-Agnostic Landing Zones
+# Enterprise Guide to Cloud (agnostic) Landing Zones
 
 A `Cloud Landing Zone` is a pre-configured, secure, and scalable foundation for deploying workloads in AWS, Azure, or GCP. Like a base camp or fully equipped office, it provides guardrails for governance, identity, security, networking, and automation, ensuring compliant and efficient cloud adoption from Day 1. It accelerates app/data/ML team onboarding, controls costs, and supports scalable growth across diverse workloads.
 # Who This Guide is For and Why It Matters
