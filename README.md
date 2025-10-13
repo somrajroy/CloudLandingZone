@@ -60,7 +60,8 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
    * But `CostCenter=Finance Ops` (common in AWS/Azure) will break in GCP.
    * In `multi-cloud designs`, follow the `lowest common denominator principle` — if it works in the strictest cloud, it will work everywhere reliably. <br/>
 
-<img width="769" height="555" alt="image" src="https://github.com/user-attachments/assets/e6f90309-cb34-42d4-8db7-225856ac9646" />
+<img width="804" height="550" alt="image" src="https://github.com/user-attachments/assets/7a241ad7-1443-4f66-9661-335f41ccc43d" />
+
 
 
 ### Tag Dictionary for Landing Zones (Universal Tag Dictionary & Governance)
