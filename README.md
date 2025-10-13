@@ -64,7 +64,7 @@ Tagging is a cornerstone of a cloud landing zone, enabling resource organization
 
 
 ### Tag Dictionary for Landing Zones (Universal Tag Dictionary & Governance)
-Below are enterprise-grade sample tags (dictionary) that you can leverage. Use this dictionary as a baseline for enterprise-grade tagging across all CSPs. If this dictionary as taken as baseline in a Landing Zone, then automatically it will be future-proof. <br/>
+Below are enterprise-grade sample tags (dictionary) that you can leverage. Use this dictionary as a baseline for enterprise-grade tagging across all CSPs. If this dictionary as taken as baseline in a Landing Zone, then automatically it will be future-proof. It can serve as a reusable asset for consistent governance and cost attribution across AWS, Azure, and GCP. <br/>
 #### Mandatory Tags (Cross-Cloud Baseline)
 These are essential FinOps and Governance tags that should be applied to all resources for financial accountability, security, and automation.  <br/>
 
