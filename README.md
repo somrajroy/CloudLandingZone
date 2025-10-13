@@ -22,7 +22,7 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
-# Cloud-Specific Mapping of Landing Zone Core Elements (AWS vs Azure vs GCP)
+# Cross-Cloud Service Mapping (AWS vs Azure vs GCP)
 Below table summarizes the elements in each CSP's. This mapping helps teams translate universal Landing Zone principles into provider-specific implementations. : <br/>
 
 | **Core Element**          | **AWS**                                                               | **Azure**                                                            | **GCP**                                                               |
