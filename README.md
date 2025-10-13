@@ -22,7 +22,8 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 | **Automation & IaC**      | Use of tools like **Terraform, CloudFormation, Bicep** to automate deployments and enforce consistency        |
 | **Cost Management**       | Implement **budgets, billing alerts**, **cost dashboards**, and **chargeback models** to control spend            |
 
-<img width="928" height="446" alt="image" src="https://github.com/user-attachments/assets/28230693-4fc3-4af9-8858-a9f8cc631551" />
+<img width="938" height="447" alt="image" src="https://github.com/user-attachments/assets/4430541b-d13e-4ac7-bf19-9f2728f70e94" />
+
 
 
 # Cross-Cloud Service Mapping (AWS vs Azure vs GCP)
