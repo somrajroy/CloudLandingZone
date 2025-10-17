@@ -1,6 +1,6 @@
 # Enterprise Guide to Cloud (agnostic) Landing Zones
 
-A `Cloud Landing Zone` is a pre-configured, secure, and scalable foundation for deploying workloads in AWS, Azure, or GCP. Like a base camp or fully equipped office, it provides guardrails for governance, identity, security, networking, and automation, ensuring compliant and efficient cloud adoption from Day 1. <br/>
+A `Cloud Landing Zone` is a pre-configured, secure, and scalable foundation for deploying workloads in AWS, Azure, or GCP. Like a base camp or fully equipped office, it provides guardrails for governance, identity, security, networking, and automation, ensuring compliant and efficient cloud adoption from Day-1. <br/><br/>
 Simple Analogy : A Cloud Landing Zone is the digital equivalent of building a fully equipped office before inviting employees to work — you wouldn't onboard staff without security, departments, operational rules and utilities in place. Similarly, a landing zone acts as the foundation for deploying workloads securely and at scale. It ensures that governance, identity, security, networking, automation, and compliance guardrails are established before any workload is onboarded.
 # Who This Guide is For and Why It Matters
 This guide is for `Cloud Architects`, `FinOps Practitioners`, `Cloud Engineers`, and `Enterprise Governance` Teams. By adopting approaches like tagging, automation, and governance outlined in this blog, including the tag dictionary and checklist, you can achieve a secure and efficient landing zone accross AWS, Azure, and GCP. <br/>
