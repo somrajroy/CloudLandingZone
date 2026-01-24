@@ -184,3 +184,4 @@ Below are some additional resources and references for further learning: <br/>
 7. [Best Practices for Tagging AWS Resources](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html)<br/>
 8. [The Complete Azure Tagging Guide](https://www.cloudzero.com/blog/azure-tagging-guide/)<br/>
 9. [Define your tagging strategy in Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging)<br/>
+10. [Azure Landing Zones | Architectural Blueprint, Tooling & Best Practices](https://www.youtube.com/watch?v=VTnqUDMchXA)<br/>
