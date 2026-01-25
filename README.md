@@ -169,6 +169,7 @@ Below are some official material to jumpstart Azure landing zones. <br/>
    * [ALZ Accelerator](https://azure.github.io/Azure-Landing-Zones/accelerator/)<br/>
    * [Implementing Zero Trust with Azure Landing Zones](https://www.youtube.com/watch?v=sZlbmqxA6TQ)<br/>
    * [Azure Landing Zone Accelerator playlist](https://www.youtube.com/playlist?list=PLFUSGymaphfBzMvjG-6VqPgpf280LC6tb) - This is not official Microsoft material but the links discussed are official.
+   * [Understanding Azure Landing Zone Design Areas](https://www.youtube.com/watch?v=5D_o9b4qRNg)<br/>
 
 # Appendix
 Below are some additional resources and references for further learning: <br/>
