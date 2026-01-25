@@ -164,7 +164,11 @@ Leverage this phased checklist to ensure completeness across planning, deploymen
 | **Automation & IaC**      | - Improve reusability of modules  <br> - Extend CI/CD to include drift detection  <br> - Add guardrails and pre-commit hooks |
 | **Cost Management**       | - Use cost reports for optimization  <br> - Apply right-sizing recommendations  <br> - Review chargeback reports             |
 
-
+# Azure Landing Zone accelerators
+Below are some official material to jumpstart Azure landing zones. <br/>
+   * [ALZ Accelerator documents)[https://azure.github.io/Azure-Landing-Zones/accelerator/]<br/>
+   * [Implementing Zero Trust with Azure Landing Zones](https://www.youtube.com/watch?v=sZlbmqxA6TQ)<br/>
+   * [Azure Landing Zone Accelerator playlist](https://www.youtube.com/playlist?list=PLFUSGymaphfBzMvjG-6VqPgpf280LC6tb) - This is not official Microsoft material but the links discussed are official.
 
 # Appendix
 Below are some additional resources and references for further learning: <br/>
