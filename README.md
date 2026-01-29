@@ -23,9 +23,12 @@ These foundational elements apply across all major cloud providers — AWS, Azur
 # Recommended Networking Topology: Hub-and-Spoke Model
 In a `cloud landing zone`, the `networking topology` plays a crucial role in ensuring secure, scalable connectivity while minimizing complexity. The `hub-and-spoke model` is the `de-facto standard` for enterprise deployments across AWS, Azure, and GCP, adopted mostly in implementations according to industry patterns and best practices from cloud providers'`Well-Architected frameworks`. This approach centralizes shared networking resources in a `hub` while isolating workloads in `spokes`, providing a balanced foundation for multi-environment (e.g., dev, test, prod) and multi-cloud setups.<br/>
 `Definition`: The hub acts as a central transit point for shared services like firewalls, VPN gateways, DNS resolution, and internet egress. Spokes are dedicated networks (e.g., VPCs in AWS, VNets in Azure, or VPCs in GCP) for specific environments or workloads, connected to the hub via peering or routing. This creates a star-like structure where spokes communicate through the hub, avoiding direct interconnections.<br/>
-
 `Cross-Cloud Implementation`: Leverage provider-specific services that align with this model — AWS Transit Gateway for hub routing, Azure hub VNets or Virtual WAN  for centralized peering, and GCP Shared VPC or Cloud Router for organization-wide networking. This ensures consistency in your landing zone, as outlined in our cross-cloud mapping table.<br/>
-`When to Use Alternatives`: For small-scale or simple setups, a fully meshed topology (direct spoke-to-spoke connections) might suffice, but it increases complexity and management burden at scale. Flat networks are generally avoided in landing zones due to poor isolation. Evaluate based on your organization's size and compliance needs during Day 0 planning.
+`When to Use Alternatives`: For small-scale or simple setups, a fully meshed topology (direct spoke-to-spoke connections) might suffice, but it increases complexity and management burden at scale. Flat networks are generally avoided in landing zones due to poor isolation. Evaluate based on your organization's size and compliance needs during Day 0 planning.<br/>
+Below is a simple ASCII art diagram illustrating the `hub-and-spoke topology`: <br/>
+<img width="1322" height="727" alt="image" src="https://github.com/user-attachments/assets/c9fd5b46-16a8-4cdd-b947-29c6463f5ba2" />
+
+
 # Cross-Cloud Service Mapping (AWS vs Azure vs GCP)
 Below table summarizes the elements in each CSP's. This mapping helps teams translate universal Landing Zone principles into provider-specific implementations. : <br/>
 
