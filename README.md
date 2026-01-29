@@ -166,7 +166,7 @@ Leverage this phased checklist to ensure completeness across planning, deploymen
 
 # Azure Landing Zone accelerators
 Below are some official material to jumpstart Azure landing zones. <br/>
-   * [ALZ Accelerator](https://azure.github.io/Azure-Landing-Zones/accelerator/) - current "source of truth" for implementation.<br/>
+   * [ALZ Accelerator](https://azure.github.io/Azure-Landing-Zones/accelerator/) - current "source of truth" for implementation.[This YouTube video is also good](https://www.youtube.com/watch?v=8VftZLHE2Zc).<br/>
    * [Leverage AI Landing Zones in Azure](https://www.youtube.com/watch?v=8FWdFG55nXw) - this also includes a Microsoft training on AI Landing zones.
    * [Implementing Zero Trust with Azure Landing Zones](https://www.youtube.com/watch?v=sZlbmqxA6TQ)<br/>
    * [Azure Landing Zone Accelerator playlist](https://www.youtube.com/playlist?list=PLFUSGymaphfBzMvjG-6VqPgpf280LC6tb) - This is not official Microsoft material but the links discussed are official.
