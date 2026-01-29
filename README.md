@@ -25,7 +25,7 @@ In a `cloud landing zone`, the `networking topology` plays a crucial role in ens
 `Definition`: The hub acts as a central transit point for shared services like firewalls, VPN gateways, DNS resolution, and internet egress. Spokes are dedicated networks (e.g., VPCs in AWS, VNets in Azure, or VPCs in GCP) for specific environments or workloads, connected to the hub via peering or routing. This creates a star-like structure where spokes communicate through the hub, avoiding direct interconnections.<br/>
 `Cross-Cloud Implementation`: Leverage provider-specific services that align with this model — AWS Transit Gateway for hub routing, Azure hub VNets or Virtual WAN  for centralized peering, and GCP Shared VPC or Cloud Router for organization-wide networking. This ensures consistency in your landing zone, as outlined in our cross-cloud mapping table.<br/>
 `When to Use Alternatives`: For small-scale or simple setups, a fully meshed topology (direct spoke-to-spoke connections) might suffice, but it increases complexity and management burden at scale. Flat networks are generally avoided in landing zones due to poor isolation. Evaluate based on your organization's size and compliance needs during Day 0 planning.<br/>
-Below is a simple ASCII art diagram illustrating the `hub-and-spoke topology`: <br/>
+Below is a simple art diagram illustrating the `hub-and-spoke topology`: <br/><br/>
 <img width="1322" height="727" alt="image" src="https://github.com/user-attachments/assets/c9fd5b46-16a8-4cdd-b947-29c6463f5ba2" />
 
 
