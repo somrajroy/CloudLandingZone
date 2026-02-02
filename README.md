@@ -214,3 +214,4 @@ Below are some additional resources and references for further learning: <br/>
 9. [Define your tagging strategy in Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-tagging)<br/>
 10. [Azure Landing Zones | Architectural Blueprint, Tooling & Best Practices](https://www.youtube.com/watch?v=VTnqUDMchXA)<br/>
 11. [Document your Landing Zone](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/document-your-aws-landing-zone-design.html#attachments-9e39a05a-8f51-4fe3-8999-522feafed6ca)<br/>
+12. [Hub-spoke network topology in Azure](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke)<br/>
