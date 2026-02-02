@@ -33,7 +33,7 @@ In a `cloud landing zone`, the `networking topology` plays a crucial role in ens
 * Single Point of Failure: If the Hub’s routing table or firewall fails, the entire cloud network goes dark. <br/>
 * Identify Heavy East-West Flows: Are there specific apps (e.g., Big Data, Backup) that move massive volumes between VNets? If yes, consider direct peering for these specific pairs. <br/>
 * Latency Sensitivity: Does the app require sub-millisecond response times? Forcing it through a Hub NVA might add unacceptable lag. <br/>
-* Cost-Benefit Analysis: Compare the cost of centralized security licenses vs. the data processing "tax" of the Hub. <br/>
+* Cost-Benefit Analysis: Compare the cost of centralized security licenses vs. the data processing "tax" of the Hub. <br/><br/>
 **Takeaway:** Most enterprise cloud landing zones start with a hub-and-spoke topology because it centralizes security, governance, and connectivity while scaling cleanly across teams and environments. Virtual WAN is essentially a managed evolution of hub-spoke, not a direct competitor & [can be cheaper for spoke peerings](https://blog.cloudtrooper.net/2026/01/16/which-azure-network-is-cheaper/) but varies by traffic volume. <br/>
 * AWS/GCP Equivalents : AWS Transit Gateway for hub-spoke, GCP Shared VPC.
 ### Quick Comparison (Decision-Centric)
