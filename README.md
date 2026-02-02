@@ -31,9 +31,9 @@ In a `cloud landing zone`, the `networking topology` plays a crucial role in ens
 
 | Topology | When Chosen | Strengths | Trade-offs |
 |---------|-------------|-----------|------------|
-| **Hub-and-Spoke** | Centralized shared services; multi-team or enterprise environments | Centralized security, governance, and hybrid connectivity; scalable and well-governed | Hub can become a bottleneck if not designed for scale; requires careful routing and capacity planning |
-| **Mesh / Peering** | Small number of VNets/VPCs with heavy east-west traffic | Low latency; simple for a small number of networks | Poor scalability; complex peering matrix; governance becomes difficult |
-| **Virtual WAN / Transit Fabric** | Global connectivity across regions or many sites | Managed transit, global scale, simplified connectivity | Different operational model; higher cost; less granular control |
+| **Hub-and-Spoke** | Centralized shared services; multi-team or enterprise environments | Centralized security, governance, and hybrid connectivity; scalable and well-governed | Hub can become a bottleneck if not designed for scale; requires careful routing, CIDR and capacity planning |
+| **Mesh / Peering** | Small number of VNets/VPCs with heavy east-west traffic | Low latency; simple for a small number of networks | Poor scalability; complex peering matrix; governance becomes difficult. No central inspection point. |
+| **Virtual WAN / Transit Fabric** | Global connectivity across regions or many sites | Managed transit at scale; automated "Any-to-Any" connectivity. | Different operational model; higher cost; less granular control |
 
 
 Below is a simple art diagram illustrating the `hub-and-spoke topology`: <br/><br/>
