@@ -28,7 +28,7 @@ In a `cloud landing zone`, the `networking topology` plays a crucial role in ens
 #### Simple guide for implementations
 * Treat hub‑and‑spoke as the default recommended pattern for most enterprise landing zones because it balances governance, security, and manageability. Use it unless client(s) have specific reasons not to.<br/>
 * Choose topology based on requirements: scale, number of sites, appliance needs, latency, and operational model (managed Virtual WAN vs. customer‑managed hub). <br/>
-* Risk : Over‑standardizing on hub‑and‑spoke without validating traffic patterns can create cost or performance issues. Action is to run a short discovery (expected traffic flows, number of VNets, security appliances) and map to topology tradeoffs. [This link provides good advice.](https://azuresecurityarchitect.com/azure-landing-zone/building-an-azure-landing-zone-in-an-existing-hub-and-spoke-architecture)<br/>
+* Risk : Over‑standardizing on hub‑and‑spoke without validating traffic patterns can create cost or performance issues. Action is to run a short discovery during day-0 (expected traffic flows, number of VNets, security appliances) and map to topology tradeoffs. [This link provides good advice.](https://azuresecurityarchitect.com/azure-landing-zone/building-an-azure-landing-zone-in-an-existing-hub-and-spoke-architecture)<br/>
 * Performance Bottlenecks: Centralized firewalls typically have throughput limits which needs to be factored in design. <br/>
 * Single Point of Failure: If the Hub’s routing table or firewall fails, the entire cloud network goes dark. <br/>
 * Identify Heavy East-West Flows: Are there specific apps (e.g., Big Data, Backup) that move massive volumes between VNets? If yes, consider direct peering for these specific pairs. <br/>
