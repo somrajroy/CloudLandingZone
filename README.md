@@ -217,3 +217,4 @@ Below are some additional resources and references for further learning: <br/>
 12. [Hub-spoke network topology in Azure](https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke)<br/>
 13. [Automate creation of sandbox environment with best practices](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/features-benefits.html)<br/>
 14. [Automate deployment of Landing Zone Accelerator on AWS](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/awsaccelerator-pipeline.html)<br/>
+15. [Landing Zone Accelerator on AWS](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/use-cases.html)<br/>
