@@ -218,3 +218,4 @@ Below are some additional resources and references for further learning: <br/>
 13. [Automate creation of sandbox environment with best practices](https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/features-benefits.html)<br/>
 14. [Automate deployment of Landing Zone Accelerator on AWS](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/awsaccelerator-pipeline.html)<br/>
 15. [Landing Zone Accelerator on AWS](https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerator-on-aws/use-cases.html)<br/>
+16. [Building a Hub-spoke architecture in AWS with Terraform](https://blog.nashtechglobal.com/building-a-hub-and-spoke-architecture-on-aws-with-transit-gateway-and-terraform/)<br/>
