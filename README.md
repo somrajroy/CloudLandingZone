@@ -192,7 +192,7 @@ Leverage this phased checklist to ensure completeness across planning, deploymen
 | **Monitoring & Logging**  | - Refine dashboards and alerts  <br> - Integrate logs with SIEM  <br> - Optimize log retention and storage costs, multi-cloud|
 | **Automation & IaC**      | - Improve reusability of modules  <br> - Extend CI/CD to include drift detection  <br> - Add guardrails and pre-commit hooks |
 | **Cost Management**       | - Use cost reports for optimization  <br> - Apply right-sizing recommendations  <br> - Review chargeback reports             |
-# Architecture Documentation Best Practices for Landing Zones & architecture diagrams ( Storytelling and Parameterized Diagrams).
+# Architecture Documentation Best Practices for Cloud Architecture diagrams and Landing Zones (Storytelling and Parameterized Diagrams).
 ### Architecture Storytelling (Business Process Narratives): Connect Business Intent to Technical Design
 A good architecture diagram should do more than display technical components. It should tell the business story (business process narratives) behind the solution. A well-architected Cloud Architecture (or Landing Zone) is only beneficial if both engineering and business stakeholders understand its value. A proven way to achieve this is through Architecture Storytelling. Rather than presenting a static inventory of technical components (VNets, IAM roles, subnets, etc.), structure your Architecture (or Landing Zone) diagrams to tell an end-to-end business story:
    * The Trigger (business trigger that initiates the process): What initiates the flow (e.g., a new subscription vending request or workload onboarding request).
