@@ -198,7 +198,7 @@ Any `good architecture diagram` should do more than display technical components
    * `The Trigger (business trigger that initiates the process)`: What initiates the flow (e.g., a new subscription vending request or workload onboarding request).
    * `The Journey (end-to-end flow of request or data or events)`: How the request, traffic, or workload moves through identity, governance, networking, security, and automation layers step-by-step.
    * `Key transformations and decision points`.
-   * `Outcom`e: Where the workload securely lands within the governed enterprise ecosystem and/or the business value delivered.
+   * `Outcome`: Where the workload securely lands within the governed enterprise ecosystem and/or the business value delivered.
    * This approach ensures that a cloud engineer understands the technical boundaries, while a CTO or Product Owner can look at the exact same diagram and understand how the system securely accelerates business delivery.
    * For example, rather than simply showing Azure OpenAI, AKS, VM, App Service, Azure SQL, PostgreSQL, or Blob Storage, the diagram should explain how an email flows through ingestion, AI processing, validation, storage, and downstream fulfillment workflows.
    * A `business story` in an architecture diagram means showing the solution from the perspective of the actual business process rather than just listing technical components. It means structuring the architecture diagram so that it tells the end-to-end story of how work or data flows through the system - from the business trigger to the final outcome - rather than just showing a static technical inventory.
