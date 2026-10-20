@@ -216,7 +216,7 @@ Because Cloud Architectures (or Landing Zones) are deployed across multiple envi
   * `Visible parity`- reviewers can see how lower environments differ from production.
   * `When not to use it`: If environments are topologically different (e.g., multi-region production vs. a single-region QA), keep separate diagrams. 
 * AWS Link : [What is Architecture Diagramming?](https://aws.amazon.com/what-is/architecture-diagramming/)<br/>
-* Azure Link : [Architecture design diagrams](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/design-diagrams)<br/>br/>
+* Azure Link : [Architecture design diagrams](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/design-diagrams)<br/><br/>
 
 **Takeaway:** A good Cloud Architecture Diagram tells a clear business story and keeps environment details in a matrix. The first helps people understand it, and the second helps teams maintain it. This is a widely used practice & it makes architecture reviews faster and clearer.
 
