@@ -227,7 +227,7 @@ A well-designed architecture diagram should communicate both the technical imple
       * What triggered the process?
       * How does the process flow through the system?
       * What final state (or business outcome) is achieved?
-   * A `successful architecture diagram` is not merely an inventory of cloud services and technologies. It is a `visual narrative` that explains how people, processes, applications, and platforms work together to deliver business value.
+   * An `effective architecture diagram` is not merely an inventory of cloud services and technologies. It is a `visual narrative` that explains how people, processes, applications, and platforms work together to deliver business value. Together, these elements mentioned above - numbering, layering, color coding, clear ownership, and dual-audience labeling - transform a technical inventory into a `coherent business story`.
 # Azure Landing Zone accelerators
 Below are some official material to jumpstart Azure landing zones. <br/>
    * [ALZ Accelerator](https://azure.github.io/Azure-Landing-Zones/accelerator/) - current "source of truth" for implementation.[This YouTube video is also good](https://www.youtube.com/watch?v=8VftZLHE2Zc).<br/>
