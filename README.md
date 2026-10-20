@@ -192,7 +192,16 @@ Leverage this phased checklist to ensure completeness across planning, deploymen
 | **Monitoring & Logging**  | - Refine dashboards and alerts  <br> - Integrate logs with SIEM  <br> - Optimize log retention and storage costs, multi-cloud|
 | **Automation & IaC**      | - Improve reusability of modules  <br> - Extend CI/CD to include drift detection  <br> - Add guardrails and pre-commit hooks |
 | **Cost Management**       | - Use cost reports for optimization  <br> - Apply right-sizing recommendations  <br> - Review chargeback reports             |
-
+# Architecture Communication: Storytelling and Parameterized Diagrams (Architecture Documentation Best Practices for Landing Zones & architecture diagrams)
+A good architecture diagram should do more than display technical components. It should tell the business story (business process narratives) behind the solution. A well-architected Cloud Architecture (or Landing Zone) is only beneficial if both engineering and business stakeholders understand its value. The best way to achieve this is through Architecture Storytelling. Rather than presenting a static inventory of technical components (VNets, IAM roles, subnets, etc.), structure your Architecture (or Landing Zone) diagrams to tell an end-to-end business story:
+   * The Trigger (business trigger that initiates the process): What initiates the flow (e.g., a new subscription vending request).
+   * The Journey (end-to-end flow of request or data or events): How the request/traffic/data or process moves through the core networking and security layers step-by-step.
+   * Key transformations and decision points
+   * Outcome: Where the workload securely lands within the governed enterprise ecosystem
+   * This approach ensures that a cloud engineer understands the technical boundaries, while a CTO or Product Owner can look at the exact same diagram and understand how the system securely accelerates business delivery.
+   * For example, rather than simply showing Azure OpenAI, AKS, PostgreSQL, and Blob Storage, the diagram should explain how an emmail flows through ingestion, AI processing, validation, storage, and fulfillment workflows.
+   * A `business story` in an architecture diagram means showing the solution from the perspective of the actual business process rather than just listing technical components. It means structuring the architecture diagram so that it tells the end-to-end story of how work or data flows through the system — from the business trigger to the final outcome — rather than just showing a static technical inventory.
+   * This way, both a technical person and a business stakeholder can follow the same diagram and understand what the system does and why the components are there.
 # Azure Landing Zone accelerators
 Below are some official material to jumpstart Azure landing zones. <br/>
    * [ALZ Accelerator](https://azure.github.io/Azure-Landing-Zones/accelerator/) - current "source of truth" for implementation.[This YouTube video is also good](https://www.youtube.com/watch?v=8VftZLHE2Zc).<br/>
